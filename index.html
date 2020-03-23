@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0">
+    <title>问卷调查</title>
+</head>
+
+<body>
+    <form action="form.php" method="POST">
+        <table>
+            <tr>
+                <td style="text-align: left;" colspan="2">
+                    <h3>一.基本资料</h3>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: right;"> 姓名：</td>
+                <td style="text-align: left;"><input name="name" type="text" placeholder="请输入姓名"></td>
+            </tr>
+            <tr>
+                <td style="text-align: right;"> 年龄：</td>
+                <td style="text-align: left;"><input name="age" type="number" placeholder="请输入年龄"></td>
+            </tr>
+            <tr>
+                <td style="text-align: right;">性别：</td>
+                <td style="text-align: left;"><input type="radio" name="sex" value="1">男<input type="radio" name="sex" value="2">女</td>
+            </tr>
+            <tr>
+                <td style="text-align: right;">目前职业：</td>
+                <td style="text-align: left;"><select name="career">
+                                <option value="1">学生</option>
+                                <option value="2">国家机构或事业单位</option>
+                                <option value="3">私企个体</option>
+                                <option value="4">服务打工</option>
+                                <option value="5">演艺业</option>
+                                <option value="6">其他</option>
+                            </select></td>
+            </tr>
+            <tr>
+                <td style="text-align: right;">整容次数：</td>
+                <td style="text-align: left;"><select name="zhengrongNum">
+                                <option value="1">一次</option>
+                                <option value="2">二次</option>
+                                <option value="3">三次</option>
+                                <option value="4">更多</option>
+                            </select></td>
+            </tr>
+            <tr>
+                <td style="text-align: right;">受教育程度：</td>
+                <td style="text-align: left;"><select name="edu">
+                                <option value="1">初中及以下</option>
+                                <option value="2">高中</option>
+                                <option value="3">大专</option>
+                                <option value="4">本科</option>
+                                <option value="5">硕士及以上</option>
+                            </select></td>
+            </tr>
+            <tr>
+                <td style="text-align: right;">月收入：</td>
+                <td style="text-align: left;"><select name="income">
+                    <option value="1">1000 以下</option>
+                    <option value="2">1000-2999</option>
+                    <option value="3">3000-4999</option>
+                    <option value="4">5000-6999</option>
+                    <option value="5">7000 以上</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td style="text-align: right;">亲友支持：</td>
+                <td style="text-align: left;"><input type="radio" name="support" value="1">非常支持<input type="radio" name="support" value="2">中立<input type="radio" name="support" value="3">不支持</td>
+            </tr>
+            <tr>
+                <td style="text-align: right;">关注美容信息：</td>
+                <td style="text-align: left;"><input type="radio" name="beautyInfo" value="1">经常<input type="radio" name="beautyInfo" value="2">偶尔<input type="radio" name="beautyInfo" value="3">从不</td>
+            </tr>
+            <tr>
+                <td style="text-align: right;">术前期待：</td>
+                <td style="text-align: left;"><input type="radio" name="expect" value="1">高期待<input type="radio" name="expect" value="2">期待适中</td>
+            </tr>
+            <tr>
+                <td style="text-align: right;"></td>
+                <td style="text-align: left;"></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">您认为有整容念头的原因是什么？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">
+                    <input type="checkbox" name="zhengrongReason" value="1">1、自己不满意
+                    <br><input type="checkbox" name="zhengrongReason" value="2">2、想得到异性的爱慕
+                    <br><input type="checkbox" name="zhengrongReason" value="3">3、工作需要
+                    <br><input type="checkbox" name="zhengrongReason" value="4">4、受周围人的影响
+                    <br><input type="checkbox" name="zhengrongReason" value="5">5、因为遭受到嘲笑或歧视
+                    <br><input type="checkbox" name="zhengrongReason" value="6">6、广告
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">
+                    <h3>附录 艾森克人格问卷 </h3>
+                </td>
+
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">
+                    编号：<input type="text" name="number2">
+                    <br> 姓名：<input type="text" name="name2">
+                    <br> 性别：<input type="radio" name="sex2" value="1">男<input type="radio" name="sex2" value="2">女
+                    <br>测验日期：<input type="date" name="checkdate">
+                    <br> 指导语：以下列出了有些人可能会有的问题，请仔细地阅读每一条， 然后根据最近一星期以内下述情况影响您的实际感觉，选择“是”或“否”
+                </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2">1.你是否有许多不同的业余爱好？ </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two1" value="1">是<input type="radio" name="two1" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2">2.你是否在做任何事情以前都要停下来仔细思考？ </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two2" value="1">是<input type="radio" name="two2" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2">3.你的心境是否常有起伏？ </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two3" value="1">是<input type="radio" name="two3" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2">4.你曾有过明知是别人的功劳而你去接受奖励的事吗？ </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two4" value="1">是<input type="radio" name="two4" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> 5.你是否健谈？ </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two5" value="1">是<input type="radio" name="two5" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2">6.欠债会使你不安吗？ </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two6" value="1">是<input type="radio" name="two6" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2">7.你曾无缘无故觉得“真是难受”吗？ </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two7" value="1">是<input type="radio" name="two7" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> 8.你曾贪图过份外之物吗？ </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two8" value="1">是<input type="radio" name="two8" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2">9.你是否在晚上小心翼翼地关好门窗？ </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two9" value="1">是<input type="radio" name="two9" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2">10.你是否比较活跃？ </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two10" value="1">是<input type="radio" name="two10" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> 11.你在见到一小孩或一动物受折磨时是否会感到非常难过？ </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two11" value="1">是<input type="radio" name="two11" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> 12.你常常为自己不该做而做了的事，不该说而说了的话而紧张？ </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two12" value="1">是<input type="radio" name="two12" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2">13.你喜欢跳降落伞吗？ </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two13" value="1">是<input type="radio" name="two13" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> 14.通常你能在热闹联欢会中尽情地玩吗？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two14" value="1">是<input type="radio" name="two14" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2">15.你容易激动吗？ </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two15" value="1">是<input type="radio" name="two15" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2">16.你曾经将自己的过错推给别人吗？ </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two16" value="1">是<input type="radio" name="two16" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2">17.你喜欢会见陌生人吗？ </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two17" value="1">是<input type="radio" name="two17" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2">18.你是否相信保险制度是一种好办法？ </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two18" value="1">是<input type="radio" name="two18" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> 19.你是一个容易伤感情的人吗？ </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two19" value="1">是<input type="radio" name="two19" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2">20.你所有的习惯都是好的吗？ </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two20" value="1">是<input type="radio" name="two20" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> 21.在社交场合你是否总不愿露面？ </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two21" value="1">是<input type="radio" name="two21" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2">22.你会服用奇异或危险作用的药物吗？ </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two22" value="1">是<input type="radio" name="two22" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2">23.你常有“厌倦”的感觉吗？ </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two23" value="1">是<input type="radio" name="two23" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+            <tr>
+                <br>
+                <td style="text-align: left;" colspan="2"> </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two" value="1">是<input type="radio" name="two" value="2">否 </td>
+            </tr>
+
+        </table>
+
+    </form>
+</body>
+
+</html>
