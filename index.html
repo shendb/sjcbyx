@@ -17,11 +17,11 @@
             </tr>
             <tr>
                 <td style="text-align: right;"> 姓名：</td>
-                <td style="text-align: left;"><input name="name" type="text" placeholder="请输入姓名"></td>
+                <td style="text-align: left;"><input name="name" type="text" maxlength="4" placeholder="请输入姓名"></td>
             </tr>
             <tr>
                 <td style="text-align: right;"> 年龄：</td>
-                <td style="text-align: left;"><input name="age" type="number" placeholder="请输入年龄"></td>
+                <td style="text-align: left;"><input name="age" type="number" maxlength="3" placeholder="请输入年龄"></td>
             </tr>
             <tr>
                 <td style="text-align: right;">性别：</td>
@@ -80,10 +80,6 @@
                 <td style="text-align: left;"><input type="radio" name="expect" value="1">高期待<input type="radio" name="expect" value="2">期待适中</td>
             </tr>
             <tr>
-                <td style="text-align: right;"></td>
-                <td style="text-align: left;"></td>
-            </tr>
-            <tr>
                 <td style="text-align: left;" colspan="2">您认为有整容念头的原因是什么？</td>
             </tr>
             <tr>
@@ -104,9 +100,9 @@
             </tr>
             <tr>
                 <td style="text-align: left;" colspan="2">
-                    编号：<input type="text" name="number2">
-                    <br> 姓名：<input type="text" name="name2">
-                    <br> 性别：<input type="radio" name="sex2" value="1">男<input type="radio" name="sex2" value="2">女
+                    编号：<input type="text" maxlength="11" name="number2">
+                    <br> 姓名：<input type="text" maxlength="4" name="name2">
+                    <br> 性别：<input type="radio" name="sex2" maxlength="11" value="1">男<input type="radio" name="sex2" value="2">女
                     <br>测验日期：<input type="date" name="checkdate2">
                     <br> 指导语：以下列出了有些人可能会有的问题，请仔细地阅读每一条， 然后根据最近一星期以内下述情况影响您的实际感觉，选择“是”或“否”
                 </td>
@@ -647,8 +643,8 @@
             </tr>
             <tr>
                 <td style="text-align: left;" colspan="2">
-                    编号：<input type="text" name="number3">
-                    <br> 姓名：<input type="text" name="name3">
+                    编号：<input type="text" maxlength="11" name="number3">
+                    <br> 姓名：<input type="text" maxlength="4" name="name3">
                     <br> 性别：<input type="radio" name="sex3" value="1">男<input type="radio" name="sex2" value="2">女
                     <br>测验日期：<input type="date" name="checkdate3">
                     <br> 指导语：以下列出了有些人可能会有的问题，请仔细地阅读每一条，然 后根据最近一星期以内下述情况影响您的实际感觉，在每个问题后标明该题 的程度得分。其中，“没有”选 1，“很轻”选 2，“中等”选 3， “偏重” 选 4，“严重”选 5。
@@ -1325,6 +1321,9 @@
             </tr>
             <tr>
                 <td style="text-align: left;" colspan="2"><input type="radio" name="four20" value="A">A<input type="radio" name="four20" value="B">B<input type="radio" name="four20" value="C">C<input type="radio" name="four20" value="D">D<input type="radio" name="four20" value="E">E</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="submit" value="提交"></td>
             </tr>
         </table>
 
