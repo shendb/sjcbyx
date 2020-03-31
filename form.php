@@ -1,4 +1,6 @@
 <?php
+require("db.php");
+error_reporting(0);
 $name=$_POST["name"];
 $age=$_POST["age"];
 $sex=$_POST["sex"];
@@ -216,5 +218,5 @@ $four17=$_POST["four17"];
 $four18=$_POST["four18"];
 $four19=$_POST["four19"];
 $four20=$_POST["four20"];
-
+echo($zhengrongReason);
 ?>
