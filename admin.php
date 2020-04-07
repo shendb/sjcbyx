@@ -7,4 +7,3 @@ function alertMessage($msg, $url)
     echo "<script>alert('{$msg}');</script>";
     echo "<script>window.location='{$url}';</script>";
 }
-alertMessage("登录成功！", "userList.html");
