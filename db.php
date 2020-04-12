@@ -1,4 +1,5 @@
 <?php
+error_reporting(E_ALL ^ E_NOTICE);
 function creatCon()
 {
     $conn = mysqli_connect("localhost", "sjcbyx", "4rfv3edc", "sjcbyx", 3306);
