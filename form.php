@@ -13,14 +13,6 @@ try {
     $userinfo .= ","  . $_POST["beautyInfo"];
     $userinfo .= ","  . $_POST["expect"];
     $userinfo .= ","  . $_POST["zhengrongReason"];
-    $userinfo .= ","  . $_POST["number2"];
-    $userinfo .= ","  . $_POST["name2"];
-    $userinfo .= ","  . $_POST["sex2"];
-    $userinfo .= ","  . $_POST["checkdate2"];
-    $userinfo .= ","  . $_POST["number3"];
-    $userinfo .= ","  . $_POST["name3"];
-    $userinfo .= ","  . $_POST["sex3"];
-    $userinfo .= ","  . $_POST["checkdate3"];
     $userinfo .= ","  . $_POST["two1"];
     $userinfo .= ","  . $_POST["two2"];
     $userinfo .= ","  . $_POST["two3"];
