@@ -229,7 +229,7 @@ try {
     } else {
         insertUserInfo($name, $age, $sex, $userinfo);
     }
-    echo ("提交成功！");
+    echo ("提交成功！" .  $_POST["yuan"]);
 } catch (Exception $e) {
     echo ($e->getMessage());
 }

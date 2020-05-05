@@ -17,7 +17,7 @@ function creatCon()
 function selectUserInfo($name, $age, $sex)
 {
     $conn = creatCon();
-    $sql = "select count(*) as num from userinfo where name=" . $name . " and age=" . $age . " and sex=" . $sex;
+    $sql = "select * from userinfo where name=" . $name . " and age=" . $age . " and sex=" . $sex;
     $result = mysqli_query($conn, $sql);
 
     if (is_resource($result)) {

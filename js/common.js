@@ -64,21 +64,21 @@ function Cal(square) {
     switch (square) {
         case 1:
             document.getElementById("heng").style.width = Width + "px";
-            document.getElementById("heng").value = Width;
+            document.getElementById("hengV").value = Width;
             break;
         case 2:
             document.getElementById("shu").style.height = Width + "px";
-            document.getElementById("shu").value = Width;
+            document.getElementById("shuV").value = Width;
             break;
         case 3:
             document.getElementById("fang").style.width = Width + "px";
             document.getElementById("fang").style.height = Width + "px";
-            document.getElementById("fang").value = Width;
+            document.getElementById("fangV").value = Width;
             break;
         case 4:
             document.getElementById("yuan").style.width = Width + "px";
             document.getElementById("yuan").style.height = Width + "px";
-            document.getElementById("yuan").value = Width;
+            document.getElementById("yuanV").value = Width;
             break;
         default:
             break;
