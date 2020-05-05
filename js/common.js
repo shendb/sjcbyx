@@ -1,9 +1,12 @@
 var time = 0;
 var Width = 0;
 var toggleFlg = false;
+var interval1 = '';
+var interval2 = '';
+var interval3 = '';
+var interval4 = '';
 window.onload = function() {
     imgList();
-    window.setInterval("hengCal()", 1000);
 }
 
 function checkInput() {
@@ -39,24 +42,86 @@ function imgList() {
     }
 }
 
-function hengCal() {
+function Cal(square) {
     switch (time) {
         case 0:
-            time = time + 2;
+            time = time + 3;
             toggleFlg = true;
             break;
-        case 20:
-            time = time - 2;
+        case 60:
+            time = time - 3;
             toggleFlg = false;
             break;
         default:
             if (toggleFlg) {
-                time = time + 2;
+                time = time + 3;
             } else {
-                time = time - 2;
+                time = time - 3;
             }
             break;
     }
-    Width = 40 + time;
-    document.getElementById("heng").style.width = Width + "px";
+    Width = 60 + time;
+    switch (square) {
+        case 1:
+            document.getElementById("heng").style.width = Width + "px";
+            document.getElementById("heng").value = Width;
+            break;
+        case 2:
+            document.getElementById("shu").style.height = Width + "px";
+            document.getElementById("shu").value = Width;
+            break;
+        case 3:
+            document.getElementById("fang").style.width = Width + "px";
+            document.getElementById("fang").style.height = Width + "px";
+            document.getElementById("fang").value = Width;
+            break;
+        case 4:
+            document.getElementById("yuan").style.width = Width + "px";
+            document.getElementById("yuan").style.height = Width + "px";
+            document.getElementById("yuan").value = Width;
+            break;
+        default:
+            break;
+    }
+}
+
+
+function squareClick(square) {
+    time = 0;
+    switch (square) {
+        case 1:
+            interval1 = setInterval("Cal(1)", 1000);
+            break;
+        case 2:
+            interval2 = setInterval("Cal(2)", 1000);
+            break;
+        case 3:
+            interval3 = setInterval("Cal(3)", 1000);
+            break;
+        case 4:
+            interval4 = setInterval("Cal(4)", 1000);
+            break;
+        default:
+            break;
+    }
+
+}
+
+function squareCancle(square) {
+    switch (square) {
+        case 1:
+            clearInterval(interval1);
+            break;
+        case 2:
+            clearInterval(interval2);
+            break;
+        case 3:
+            clearInterval(interval3);
+            break;
+        case 4:
+            clearInterval(interval4);
+            break;
+        default:
+            break;
+    }
 }

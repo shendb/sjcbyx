@@ -218,6 +218,11 @@ try {
         $userinfo .= ","  . $_POST[$imgMonth];
     }
 
+    $userinfo .= ","  . $_POST["heng"];
+    $userinfo .= ","  . $_POST["shu"];
+    $userinfo .= ","  . $_POST["fang"];
+    $userinfo .= ","  . $_POST["yuan"];
+
     $selectFlg = selectUserInfo($name, $age, $sex);
     if ($selectFlg) {
         updateUserInfo($name, $age, $sex, $userinfo);
