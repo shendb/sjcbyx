@@ -1313,42 +1313,96 @@
             <tr id="imgStartBefore">
                 <td style="text-align: left;" colspan="2"><input type="radio" name="four20" value="A">A<input type="radio" name="four20" value="B">B<input type="radio" name="four20" value="C">C<input type="radio" name="four20" value="D">D<input type="radio" name="four20" value="E">E</td>
             </tr>
-
+            <!-- 横 -->
             <tr>
+                <td>21.</td>
+                <td></td>
+            </tr>
+            <tr style="height: 150px;">
                 <td>
-                    42.
-                    <div id="heng" style="width:60px; right:120px;">
+                    <div id="hengDiv" style="width:60px; ">
                         <hr>
                     </div>
-                    <input type="text" name="heng" id="hengV" style="visibility: hidden;">
+                    <div id="heng" style="width:60px; ">
+                        <hr>
+                    </div>
                 </td>
-                <td><input type="button" value="开始测试" style="text-align: left;" onclick="squareClick(1);"><input type="button" value="确定" style="text-align: right;" onclick="squareCancle(1);"></td>
+                <td><input type="text" name="heng" id="hengV" style="visibility: hidden;"></td>
             </tr>
             <tr>
                 <td>
-                    43.
-                    <div id="shu" style="left:60px;width:1px; height:60px;border-right: 1px solid black;">
-                    </div>
-                    <input type="text" name="shu" id="shuV" style="visibility: hidden;">
+                    <input type="button" value="开始测试" style="text-align: left;" onclick="squareClick(1);">
+                    <input type="button" value="确定" style="text-align: right;" onclick="squareCancle(1);">
                 </td>
-                <td><input type="button" value="开始测试" style="text-align: left;" onclick="squareClick(2);"><input type="button" value="确定" style="text-align: right;" onclick="squareCancle(2);"></td>
+                <td></td>
             </tr>
-            <tr>
+
+            <!-- 竖 -->
+            <tr id="22" style="display:none;">
+                <td>22.</td>
+                <td></td>
+            </tr>
+            <tr style="display:none;height: 150px;" id="trshu">
                 <td>
-                    44.
-                    <div id="fang" style="left:60px;width:60px; height:60px;border: 1px solid black;">
+                    <div id="shuDiv" style="width:1px; height:60px;border-right: 1px solid black;">
                     </div>
-                    <input type="text" name="fang" id="fangV" style="visibility: hidden;">
                 </td>
-                <td><input type="button" value="开始测试" style="text-align: left;" onclick="squareClick(3);"><input type="button" value="确定" style="text-align: right;" onclick="squareCancle(3);"></td>
+                <td>
+                    <div id="shu" style="width:1px; height:60px;border-right: 1px solid black;">
+                    </div>
+                </td>
             </tr>
-            <td>
-                45.
-                <div id="yuan" style="left:60px;border-radius: 50%; width:60px; height:60px;border: 1px solid black;">
-                </div>
-                <input type="text" name="yuan" id="yuanV" style="visibility: hidden;">
-            </td>
-            <td><input type="button" value="开始测试" style="text-align: left;" onclick="squareClick(4);"><input type="button" value="确定" style="text-align: right;" onclick="squareCancle(4);"></td>
+            <tr style="display:none" id="trshuBtn">
+                <td><input type="button" value="开始测试" onclick="squareClick(2);"><input type="button" value="确定" onclick="squareCancle(2);"></td>
+                <td><input type="text" name="shu" id="shuV" style="visibility: hidden;"></td>
+            </tr>
+
+            <!-- 方 -->
+            <tr id="23" style="display:none;">
+                <td>23.</td>
+                <td></td>
+            </tr>
+            <tr style="display:none;height: 150px;" id="trfang">
+                <td>
+                    <div id="fangDiv" style="width:60px; height:60px;border: 1px solid black;">
+                    </div>
+                </td>
+                <td>
+                    <div id="fang" style="width:60px; height:60px;border: 1px solid black;">
+                    </div>
+
+                </td>
+            </tr>
+            <tr style="display:none" id="trfangBtn">
+                <td><input type="button" value="开始测试" onclick="squareClick(3);"><input type="button" value="确定" onclick="squareCancle(3);"></td>
+                <td> <input type="text" name="fang" id="fangV" style="visibility: hidden;"></td>
+            </tr>
+
+            <!-- 圆 -->
+            <tr id="24" style="display:none;">
+                <td>24.</td>
+                <td></td>
+            </tr>
+            <tr style="display:none;height: 150px;" id="tryuan">
+                <td>
+                    <div id="yuanDiv" style="border-radius: 50%; width:60px; height:60px;border: 1px solid black;">
+                    </div>
+                </td>
+                <td>
+                    <div id="yuan" style="border-radius: 50%; width:60px; height:60px;border: 1px solid black;">
+                    </div>
+                </td>
+            </tr>
+            <tr style="display:none" id="tryuanBtn">
+                <td><input type="button" value="开始测试" onclick="squareClick(4);"><input type="button" value="确定" onclick="squareCancle(4);"></td>
+                <td><input type="text" name="yuan" id="yuanV" style="visibility: hidden;"></td>
+            </tr>
+
+
+            <tr style="height: 10px;">
+                <td></td>
+                <td></td>
+            </tr>
             <tr>
                 <td style="text-align: left;" colspan="2"><input type="submit" value="保存"></td>
             </tr>

@@ -91,6 +91,7 @@ function squareClick(square) {
     switch (square) {
         case 1:
             interval1 = setInterval("Cal(1)", 1000);
+
             break;
         case 2:
             interval2 = setInterval("Cal(2)", 1000);
@@ -111,12 +112,21 @@ function squareCancle(square) {
     switch (square) {
         case 1:
             clearInterval(interval1);
+            document.getElementById("trshu").style.display = "block";
+            document.getElementById("trshuBtn").style.display = "block";
+            document.getElementById("22").style.display = "block";
             break;
         case 2:
             clearInterval(interval2);
+            document.getElementById("trfang").style.display = "block";
+            document.getElementById("trfangBtn").style.display = "block";
+            document.getElementById("23").style.display = "block";
             break;
         case 3:
             clearInterval(interval3);
+            document.getElementById("tryuan").style.display = "block";
+            document.getElementById("tryuanBtn").style.display = "block";
+            document.getElementById("24").style.display = "block";
             break;
         case 4:
             clearInterval(interval4);
