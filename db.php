@@ -14,12 +14,11 @@ function creatCon()
     return $conn;
 }
 
-function selectUserInfo($name, $age, $sex)
+function selectUserInfo($name)
 {
     $conn = creatCon();
-    $sql = "select * from userinfo where name=" . $name . " and age=" . $age . " and sex=" . $sex;
+    $sql = "select * from userinfo where name=" . $name;
     $result = mysqli_query($conn, $sql);
-
     if (is_resource($result)) {
         mysqli_close($conn);
         return true;

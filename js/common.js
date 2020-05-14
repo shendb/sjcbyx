@@ -45,18 +45,18 @@ function imgList() {
 function Cal(square) {
     switch (time) {
         case 0:
-            time = time + 3;
+            time = time + 1;
             toggleFlg = true;
             break;
         case 60:
-            time = time - 3;
+            time = time - 1;
             toggleFlg = false;
             break;
         default:
             if (toggleFlg) {
-                time = time + 3;
+                time = time + 1;
             } else {
-                time = time - 3;
+                time = time - 1;
             }
             break;
     }
@@ -112,21 +112,12 @@ function squareCancle(square) {
     switch (square) {
         case 1:
             clearInterval(interval1);
-            document.getElementById("trshu").style.display = "block";
-            document.getElementById("trshuBtn").style.display = "block";
-            document.getElementById("22").style.display = "block";
             break;
         case 2:
             clearInterval(interval2);
-            document.getElementById("trfang").style.display = "block";
-            document.getElementById("trfangBtn").style.display = "block";
-            document.getElementById("23").style.display = "block";
             break;
         case 3:
             clearInterval(interval3);
-            document.getElementById("tryuan").style.display = "block";
-            document.getElementById("tryuanBtn").style.display = "block";
-            document.getElementById("24").style.display = "block";
             break;
         case 4:
             clearInterval(interval4);

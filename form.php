@@ -223,13 +223,14 @@ try {
     $userinfo .= ","  . $_POST["fang"];
     $userinfo .= ","  . $_POST["yuan"];
 
-    $selectFlg = selectUserInfo($name, $age, $sex);
+    $selectFlg = selectUserInfo($name);
+    echo ($selectFlg);
     if ($selectFlg) {
         updateUserInfo($name, $age, $sex, $userinfo);
     } else {
         insertUserInfo($name, $age, $sex, $userinfo);
     }
-    echo ("提交成功！" .  $_POST["yuan"]);
+    echo ("提交成功！" .  $selectFlg);
 } catch (Exception $e) {
     echo ($e->getMessage());
 }
