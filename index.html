@@ -14,23 +14,28 @@
         <table style="border-collapse: collapse;" headFixMode="true">
             <tr>
                 <td style="text-align: left;" colspan="2">
+                    <h4 style="color:red;">您好！我是来自大连医科大学的研究生，因毕业论文需要特邀请您进行问卷作答。 问卷结果仅限于学术研究，资料收回后我们也将会对其严格保密。答案无对错之分，确保您的选择能真实地反映自己的情况，请勿漏填或多填。</h4>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">
                     <h3>一.基本资料</h3>
                 </td>
             </tr>
             <tr>
-                <td style="text-align: right;">姓名：</td>
+                <td style="text-align: left;">姓名：</td>
                 <td style="text-align: left;"><input name="name" type="text" maxlength="4" placeholder="请输入姓名"></td>
             </tr>
             <tr>
-                <td style="text-align: right;">年龄：</td>
+                <td style="text-align: left;">年龄：</td>
                 <td style="text-align: left;"><input name="age" type="number" maxlength="3" placeholder="请输入年龄"></td>
             </tr>
             <tr>
-                <td style="text-align: right;">性别：</td>
+                <td style="text-align: left;">性别：</td>
                 <td style="text-align: left;"><input type="radio" name="sex" value="1">男<input type="radio" name="sex" value="2">女</td>
             </tr>
             <tr>
-                <td style="text-align: right;">目前职业：</td>
+                <td style="text-align: left;">目前职业：</td>
                 <td style="text-align: left;"><select name="career">
 						<option value="1">学生</option>
 						<option value="2">国家机构或事业单位</option>
@@ -41,7 +46,7 @@
 				</select></td>
             </tr>
             <tr>
-                <td style="text-align: right;">整容次数：</td>
+                <td style="text-align: left;">整容次数：</td>
                 <td style="text-align: left;"><select name="zhengrongNum">
 						<option value="1">一次</option>
 						<option value="2">二次</option>
@@ -50,7 +55,7 @@
 				</select></td>
             </tr>
             <tr>
-                <td style="text-align: right;">受教育程度：</td>
+                <td style="text-align: left;">受教育程度：</td>
                 <td style="text-align: left;"><select name="edu">
 						<option value="1">初中及以下</option>
 						<option value="2">高中</option>
@@ -60,7 +65,7 @@
 				</select></td>
             </tr>
             <tr>
-                <td style="text-align: right;">月收入：</td>
+                <td style="text-align: left;">月收入：</td>
                 <td style="text-align: left;"><select name="income">
 						<option value="1">1000 以下</option>
 						<option value="2">1000-2999</option>
@@ -70,15 +75,15 @@
 				</select></td>
             </tr>
             <tr>
-                <td style="text-align: right;">亲友支持：</td>
+                <td style="text-align: left;">亲友支持：</td>
                 <td style="text-align: left;"><input type="radio" name="support" value="1">非常支持<input type="radio" name="support" value="2">中立<input type="radio" name="support" value="3">不支持</td>
             </tr>
             <tr>
-                <td style="text-align: right;">关注美容信息：</td>
+                <td style="text-align: left;">关注美容信息：</td>
                 <td style="text-align: left;"><input type="radio" name="beautyInfo" value="1">经常<input type="radio" name="beautyInfo" value="2">偶尔<input type="radio" name="beautyInfo" value="3">从不</td>
             </tr>
             <tr>
-                <td style="text-align: right;">术前期待：</td>
+                <td style="text-align: left;">术前期待：</td>
                 <td style="text-align: left;"><input type="radio" name="expect" value="1">高期待<input type="radio" name="expect" value="2">期待适中</td>
             </tr>
             <tr>
@@ -91,15 +96,9 @@
                     <br> <input type="radio" name="zhengrongReason" value="5">5、因为遭受到嘲笑或歧视
                     <br> <input type="radio" name="zhengrongReason" value="6">6、广告</td>
             </tr>
-            <tr>
-                <td style="text-align: left;" colspan="2">
-                    <h3>附录 艾森克人格问卷</h3>
-                </td>
 
-            </tr>
             <tr>
-                <td style="text-align: left;" colspan="2">编号：<input type="text" maxlength="11" name="number2"> <br> 姓名：<input type="text" maxlength="4" name="name2"> <br> 性别：<input type="radio" name="sex2" maxlength="11" value="1">男<input type="radio" name="sex2" value="2">女 <br>测验日期：<input type="date"
-                        name="checkdate2"> <br> 指导语：以下列出了有些人可能会有的问题，请仔细地阅读每一条， 然后根据最近一星期以内下述情况影响您的实际感觉，选择“是”或“否”
+                <td style="text-align: left;color:red" colspan="2"> 指导语：以下列出了有些人可能会有的问题，请仔细地阅读每一条， 然后根据最近一星期以内下述情况影响您的实际感觉，选择“是”或“否”
                 </td>
             </tr>
             <tr>
@@ -662,7 +661,7 @@
                 <td style="text-align: right;" colspan="2"><input type="submit" value="保存"></td>
             </tr>
             <tr>
-                <td style="text-align: left;" colspan="2">
+                <td style="text-align: left;color:red" colspan="2">
                     指导语：以下列出了有些人可能会有的问题，请仔细地阅读每一条，然 后根据最近一星期以内下述情况影响您的实际感觉，在每个问题后标明该题 的程度得分。其中，“没有”选 1，“很轻”选 2，“中等”选 3， “偏重” 选 4，“严重”选 5。</td>
             </tr>
             <tr>
@@ -1211,7 +1210,7 @@
                 <td style="text-align: right;" colspan="2"><input type="submit" value="保存"></td>
             </tr>
             <tr>
-                <td style="text-align: left;" colspan="2">
+                <td style="text-align: left;color:red;" colspan="2">
                     本测验题共有20句描述语，请你针对自己的实际情况，判断你对每一句描述语的赞同程度如何,在每一句描述语后面相应的标上字母。其中A表示完全同意，B表示有些同意，C表示无所谓同意或不同意D表示有些不同意，E表示完全不同意。
                 </td>
             </tr>
@@ -1332,8 +1331,14 @@
             <tr>
                 <td style="text-align: left;" colspan="2">20、我每次参加正式考试或考核的成绩,常常比平时的成绩更好些。</td>
             </tr>
-            <tr id="imgStartBefore">
+            <tr>
                 <td style="text-align: left;" colspan="2"><input type="radio" name="four20" value="A">A<input type="radio" name="four20" value="B">B<input type="radio" name="four20" value="C">C<input type="radio" name="four20" value="D">D<input type="radio" name="four20" value="E">E</td>
+            </tr>
+            <tr>
+                <td style='text-align: right;' colspan='2'><input type='submit' value='保存'></td>
+            </tr>
+            <tr id="imgStartBefore">
+                <td style="text-align: left;color:red;" colspan="2">手术前后照片 改善度0~9评分</td>
             </tr>
             <!-- 横 -->
             <tr style='border-top: 1px solid'>
@@ -1418,7 +1423,10 @@
                 <td></td>
             </tr>
             <tr style='border-top: 1px solid'>
-                <td style="text-align: left;" colspan="2"><input type="submit" value="保存"></td>
+                <td style="text-align: right;" colspan="2"><input type="submit" value="保存"></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;" colspan="2">非常感谢您的配合与帮助！！！</td>
             </tr>
         </table>
     </form>
