@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta
 	name="viewport"
-	content="width=device-width, initial-scale=1.0,user-scalable=0"
+	content="width=device-width, initial-scale = 1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0"
 >
 <title>问卷调查</title>
 <script src="./js/jquery-3.3.1.min.js"></script>
@@ -5534,8 +5534,13 @@
 					>
 						<input
 							type="text"
-							name="heng"
-							id="hengV"
+							name="hengB"
+							id="hengB"
+							style="visibility: hidden;"
+						> <input
+							type="text"
+							name="hengL"
+							id="hengL"
 							style="visibility: hidden;"
 						>
 					</div>
@@ -5552,13 +5557,16 @@
 				<td style="text-align: right;"><input
 					type="button"
 					value="下一页"
+					onclick="Cal(1)"
 				><input
 					type="button"
 					value="发现图形变大"
+					onclick="change2big(1)"
 				></td>
 				<td><input
 					type="button"
 					value="发现图形变小"
+					onclick="change2little(1)"
 					style="text-align: right;"
 				></td>
 			</tr>
@@ -5582,8 +5590,13 @@
 					>
 						<input
 							type="text"
-							name="shu"
-							id="shuV"
+							name="shuB"
+							id="shuB"
+							style="visibility: hidden;"
+						> <input
+							type="text"
+							name="shuL"
+							id="shuL"
 							style="visibility: hidden;"
 						>
 					</div>
@@ -5599,14 +5612,17 @@
 				<td style="text-align: right;"><input
 					type="button"
 					value="下一页"
+					onclick="Cal(2)"
 				><input
 					type="button"
 					value="发现图形变大"
+					onclick="change2big(2)"
 				></td>
 				<td><input
 					type="button"
 					value="发现图形变小"
 					style="text-align: right;"
+					onclick="change2little(2)"
 				></td>
 			</tr>
 			<!-- 方 -->
@@ -5628,8 +5644,13 @@
 					>
 						<input
 							type="text"
-							name="fang"
-							id="fangV"
+							name="fangB"
+							id="fangB"
+							style="visibility: hidden;"
+						> <input
+							type="text"
+							name="fangL"
+							id="fangL"
 							style="visibility: hidden;"
 						>
 					</div>
@@ -5645,14 +5666,17 @@
 				<td style="text-align: right;"><input
 					type="button"
 					value="下一页"
+					onclick="Cal(3)"
 				><input
 					type="button"
 					value="发现图形变大"
+					onclick="change2big(3)"
 				></td>
 				<td><input
 					type="button"
 					value="发现图形变小"
 					style="text-align: right;"
+					onclick="change2little(3)"
 				></td>
 			</tr>
 			<!-- 圆 -->
@@ -5674,8 +5698,13 @@
 					>
 						<input
 							type="text"
-							name="yuan"
-							id="yuanV"
+							name="yuanB"
+							id="yuanB"
+							style="visibility: hidden;"
+						> <input
+							type="text"
+							name="yuanL"
+							id="yuanL"
 							style="visibility: hidden;"
 						>
 					</div>
@@ -5691,14 +5720,17 @@
 				<td style="text-align: right;"><input
 					type="button"
 					value="下一页"
+					onclick="Cal(4)"
 				><input
 					type="button"
 					value="发现图形变大"
+					onclick="change2big(4)"
 				></td>
 				<td><input
 					type="button"
 					value="发现图形变小"
 					style="text-align: right;"
+					onclick="change2little(4)"
 				></td>
 			</tr>
 			<tr style="height: 10px;">
