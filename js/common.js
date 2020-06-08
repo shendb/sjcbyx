@@ -92,18 +92,115 @@ function Cal(square) {
 	Width = 60 + time;
 	switch (square) {
 	case 1:
+
+		$("#heng").hide();
+		$("#hengDiv").hide();
 		document.getElementById("heng").style.width = Width + "px";
+		setTimeout(function (){
+			
+			$("#heng").show();
+			$("#hengDiv").show();
+		}, 500);
 		break;
 	case 2:
+		$("#shu").hide();
+		$("#shuDiv").hide();
 		document.getElementById("shu").style.height = Width + "px";
+		setTimeout(function (){
+			 
+			$("#shu").show();
+			$("#shuDiv").show();
+		}, 500);
 		break;
 	case 3:
+		$("#fang").hide();
+		$("#fangDiv").hide();
 		document.getElementById("fang").style.width = Width + "px";
 		document.getElementById("fang").style.height = Width + "px";
+		setTimeout(function (){
+			 
+			$("#fang").show();
+			$("#fangDiv").show();
+		}, 500);
 		break;
 	case 4:
+		$("#yuan").hide();
+		$("#yuanDiv").hide();
 		document.getElementById("yuan").style.width = Width + "px";
 		document.getElementById("yuan").style.height = Width + "px";
+		setTimeout(function (){
+			 
+			$("#yuan").show();
+			$("#yuanDiv").show();
+		}, 500);
+		break;
+	default:
+		break;
+	}
+}
+
+function CalToggle(square) {
+
+	if(time>=15){
+		toggleFlg = 1;
+	}
+	if (time<=-15){
+		toggleFlg = 0;
+	}
+	switch (toggleFlg) {
+	case 1:
+		time = time - 1;
+		break;
+	case 0:
+		time = time + 1;
+		break;
+	default:
+		break;
+	}
+	Width = 60 + time;
+	switch (square) {
+	case 1:
+
+		$("#heng").hide();
+		$("#hengDiv").hide();
+		document.getElementById("heng").style.width = Width + "px";
+		setTimeout(function (){
+			
+			$("#heng").show();
+			$("#hengDiv").show();
+		}, 500);
+		break;
+	case 2:
+		$("#shu").hide();
+		$("#shuDiv").hide();
+		document.getElementById("shu").style.height = Width + "px";
+		setTimeout(function (){
+			 
+			$("#shu").show();
+			$("#shuDiv").show();
+		}, 500);
+		break;
+	case 3:
+		$("#fang").hide();
+		$("#fangDiv").hide();
+		document.getElementById("fang").style.width = Width + "px";
+		document.getElementById("fang").style.height = Width + "px";
+		setTimeout(function (){
+			 
+			$("#fang").show();
+			$("#fangDiv").show();
+		}, 500);
+		break;
+	case 4:
+		$("#yuan").hide();
+		$("#yuanDiv").hide();
+		document.getElementById("yuan").style.width = Width + "px";
+		document.getElementById("yuan").style.height = Width + "px";
+		setTimeout(function (){
+			 
+			$("#yuan").show();
+			$("#yuanDiv").show();
+		}, 500);
 		break;
 	default:
 		break;
