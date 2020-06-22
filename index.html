@@ -2,7 +2,10 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
+<meta
+	http-equiv="Content-Type"
+	content="text/html; charset=utf-8"
+>
 <meta
 	name="viewport"
 	content="width=device-width, initial-scale = 1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0"
@@ -42,9 +45,12 @@
 				<td style="text-align: left;">姓名：</td>
 				<td style="text-align: left;"><input
 					name="name"
+					id="name"
 					type="text"
 					maxlength="4"
 					placeholder="请输入姓名"
+					onmouseout="nameChang()"
+					autocomplete="on"
 				></td>
 			</tr>
 			<tr>
@@ -1759,7 +1765,7 @@
 				<td
 					style="text-align: left;"
 					colspan="2"
-				>79.你赴约或上班吃到过吗？</td>
+				>79.你赴约或上班迟到过吗？</td>
 			</tr>
 			<tr>
 				<td
@@ -5730,10 +5736,10 @@
 			</tr>
 			<tr id="tryuanBtn">
 				<td style="text-align: right;"><input
-                    type="button"
-                    value="上一页"
-                    onclick="CalToggle(4)"
-                ><input
+					type="button"
+					value="上一页"
+					onclick="CalToggle(4)"
+				><input
 					type="button"
 					value="图形变大"
 					onclick="change2big(4)"
@@ -5744,10 +5750,10 @@
 					style="text-align: right;"
 					onclick="change2little(4)"
 				><input
-                    type="button"
-                    value="下一页"
-                    onclick="Cal(4)"
-                ></td>
+					type="button"
+					value="下一页"
+					onclick="Cal(4)"
+				></td>
 			</tr>
 			<tr style="height: 10px;">
 				<td></td>

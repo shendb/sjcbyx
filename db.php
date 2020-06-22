@@ -1,10 +1,10 @@
 <?php
+header("Content-type: text/html;charset=utf-8");
 error_reporting(E_ALL ^ E_NOTICE);
 
 function creatCon()
 {
     $conn = mysqli_connect("localhost", "root", "4rfv3edc", "sjcbyx", 3306);
-
     // 判断是否连接成功
     if (! $conn) {
         echo ("数据库连接失败！" . mysqli_connect_error());
@@ -20,7 +20,7 @@ function selectUserInfo($name)
     $conn = creatCon();
     $sql = "select * from userinfo where name='" . $name . "'";
     $result = mysqli_query($conn, $sql);
-    if (is_resource($result)) {
+    if (mysqli_num_rows($result) > 0) {
         mysqli_close($conn);
         return true;
     } else {
@@ -43,4 +43,17 @@ function insertUserInfo($name, $baseInfo, $table1, $table2, $table3, $table4, $h
     $sql = "insert into userinfo (name,baseInfo,table1,table2,table3,table4,hengB,hengL,shuB,shuL,fangB,fangL,yuanB,yuanL) values('" . $name . "','" . $baseInfo . "','" . $table1 . "','" . $table2 . "','" . $table3 . "','" . $table4 . "','" . $hengB . "','" . $hengL . "','" . $shuB . "','" . $shuL . "','" . $fangB . "','" . $fangL . "','" . $yuanB . "','" . $yuanL . "')";
     mysqli_query($conn, $sql);
     mysqli_close($conn);
+}
+
+function selectUserInfoForAjax($name)
+{
+    $conn = creatCon();
+    $sql = "select * from userinfo where name='" . $name . "'";
+    $result = mysqli_query($conn, $sql);
+    if (mysqli_num_rows($result) > 0) {
+        mysqli_close($conn);
+        return $result;
+    } else {
+        return null;
+    }
 }

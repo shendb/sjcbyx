@@ -7,10 +7,6 @@ window.onload = function() {
 	sessionStorage.clear();
 }
 
-function checkInput() {
-
-}
-
 function imgList() {
 	var imgStr = "";
 	var idStr = "";
@@ -73,10 +69,10 @@ function Cal(square) {
 		toggleFlg = 1;
 	}
 
-	if(time>=15){
+	if (time >= 15) {
 		toggleFlg = 0;
 	}
-	if (time<=-15){
+	if (time <= -15) {
 		toggleFlg = 1;
 	}
 	switch (toggleFlg) {
@@ -96,8 +92,8 @@ function Cal(square) {
 		$("#heng").hide();
 		$("#hengDiv").hide();
 		document.getElementById("heng").style.width = Width + "px";
-		setTimeout(function (){
-			
+		setTimeout(function() {
+
 			$("#heng").show();
 			$("#hengDiv").show();
 		}, 500);
@@ -106,8 +102,8 @@ function Cal(square) {
 		$("#shu").hide();
 		$("#shuDiv").hide();
 		document.getElementById("shu").style.height = Width + "px";
-		setTimeout(function (){
-			 
+		setTimeout(function() {
+
 			$("#shu").show();
 			$("#shuDiv").show();
 		}, 500);
@@ -117,8 +113,8 @@ function Cal(square) {
 		$("#fangDiv").hide();
 		document.getElementById("fang").style.width = Width + "px";
 		document.getElementById("fang").style.height = Width + "px";
-		setTimeout(function (){
-			 
+		setTimeout(function() {
+
 			$("#fang").show();
 			$("#fangDiv").show();
 		}, 500);
@@ -128,8 +124,8 @@ function Cal(square) {
 		$("#yuanDiv").hide();
 		document.getElementById("yuan").style.width = Width + "px";
 		document.getElementById("yuan").style.height = Width + "px";
-		setTimeout(function (){
-			 
+		setTimeout(function() {
+
 			$("#yuan").show();
 			$("#yuanDiv").show();
 		}, 500);
@@ -141,10 +137,10 @@ function Cal(square) {
 
 function CalToggle(square) {
 
-	if(time>=15){
+	if (time >= 15) {
 		toggleFlg = 1;
 	}
-	if (time<=-15){
+	if (time <= -15) {
 		toggleFlg = 0;
 	}
 	switch (toggleFlg) {
@@ -164,8 +160,8 @@ function CalToggle(square) {
 		$("#heng").hide();
 		$("#hengDiv").hide();
 		document.getElementById("heng").style.width = Width + "px";
-		setTimeout(function (){
-			
+		setTimeout(function() {
+
 			$("#heng").show();
 			$("#hengDiv").show();
 		}, 500);
@@ -174,8 +170,8 @@ function CalToggle(square) {
 		$("#shu").hide();
 		$("#shuDiv").hide();
 		document.getElementById("shu").style.height = Width + "px";
-		setTimeout(function (){
-			 
+		setTimeout(function() {
+
 			$("#shu").show();
 			$("#shuDiv").show();
 		}, 500);
@@ -185,8 +181,8 @@ function CalToggle(square) {
 		$("#fangDiv").hide();
 		document.getElementById("fang").style.width = Width + "px";
 		document.getElementById("fang").style.height = Width + "px";
-		setTimeout(function (){
-			 
+		setTimeout(function() {
+
 			$("#fang").show();
 			$("#fangDiv").show();
 		}, 500);
@@ -196,8 +192,8 @@ function CalToggle(square) {
 		$("#yuanDiv").hide();
 		document.getElementById("yuan").style.width = Width + "px";
 		document.getElementById("yuan").style.height = Width + "px";
-		setTimeout(function (){
-			 
+		setTimeout(function() {
+
 			$("#yuan").show();
 			$("#yuanDiv").show();
 		}, 500);
@@ -207,7 +203,7 @@ function CalToggle(square) {
 	}
 }
 
-function change2big(square){
+function change2big(square) {
 	var Width = 60 + time;
 	switch (square) {
 	case 1:
@@ -226,7 +222,7 @@ function change2big(square){
 		break;
 	}
 }
-function change2little(square){
+function change2little(square) {
 	var Width = 60 + time;
 	switch (square) {
 	case 1:
@@ -243,5 +239,57 @@ function change2little(square){
 		break;
 	default:
 		break;
+	}
+}
+
+function nameChang() {
+	$.ajax({
+		url : "getform.php",
+		data : {
+			"name" : document.getElementById("name").value
+		},
+		type : "post",
+		dataType : "json",
+		success : function(res) {
+			if (res != null) {
+				$('#name').val(res.name);
+				$baseInfo = res.baseInfo.split("|");
+				$("[name='age']").val($baseInfo[0]);
+				if(isNotEmpty($baseInfo[1]) ){
+					$("input[name='sex'][value="+$baseInfo[1]+"]").attr("checked",true); 
+				}
+				if(isNotEmpty($baseInfo[2]) ){
+					$("[name='career']").val($baseInfo[2]);
+				}
+				if(isNotEmpty($baseInfo[3]) ){
+					$("[name='zhengrongNum']").val($baseInfo[3]);
+				}
+				if(isNotEmpty($baseInfo[4]) ){
+					$("[name='edu']").val($baseInfo[4]);
+				}
+				if(isNotEmpty($baseInfo[5]) ){
+					$("[name='income']").val($baseInfo[5]);
+				}
+				if(isNotEmpty($baseInfo[6]) ){
+					$("input[name='support'][value="+$baseInfo[6]+"]").attr("checked",true); 
+				}
+				if(isNotEmpty($baseInfo[7]) ){
+					$("input[name='beautyInfo'][value="+$baseInfo[7]+"]").attr("checked",true); 
+				}
+				if(isNotEmpty($baseInfo[8]) ){
+					$("input[name='expect'][value="+$baseInfo[8]+"]").attr("checked",true); 
+				}
+				if(isNotEmpty($baseInfo[9]) ){
+					$("input[name='zhengrongReason'][value="+$baseInfo[9]+"]").attr("checked",true); 
+				}
+			}else {
+				alert("输入名字后，没有匹配的信息！");
+			}
+		}
+	});
+}
+function isNotEmpty(temp){
+	if (temp!=null  && temp!=""){
+		return true;
 	}
 }
