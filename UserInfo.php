@@ -15,6 +15,8 @@ class UserInfo
 
     public $table4 = "";
 
+    public $table5 = "";
+
     public $hengB = "";
 
     public $hengL = "";

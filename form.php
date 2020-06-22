@@ -219,12 +219,12 @@ try {
     $imgWeek = "imgWeek_1";
     $imgMonth = "imgMonth_1";
     $table4 = $_POST[$imgWeek];
-    $table4 .= "|" . $_POST[$imgMonth];
+    $table5 = $_POST[$imgMonth];
     for ($i = 2; $i <= 41; $i ++) {
         $imgWeek = "imgWeek_" . $i;
         $imgMonth = "imgMonth_" . $i;
         $table4 .= "|" . $_POST[$imgWeek];
-        $table4 .= "|" . $_POST[$imgMonth];
+        $table5 .= "|" . $_POST[$imgMonth];
     }
 
     $hengB = $_POST["hengB"];
@@ -238,9 +238,9 @@ try {
 
     $selectFlg = selectUserInfo($name);
     if ($selectFlg) {
-        updateUserInfo($name, $baseInfo, $table1, $table2, $table3, $table4, $hengB, $hengL, $shuB, $shuL, $fangB, $fangL, $yuanB, $yuanL);
+        updateUserInfo($name, $baseInfo, $table1, $table2, $table3, $table4, $table5, $hengB, $hengL, $shuB, $shuL, $fangB, $fangL, $yuanB, $yuanL);
     } else {
-        insertUserInfo($name, $baseInfo, $table1, $table2, $table3, $table4, $hengB, $hengL, $shuB, $shuL, $fangB, $fangL, $yuanB, $yuanL);
+        insertUserInfo($name, $baseInfo, $table1, $table2, $table3, $table4, $table5, $hengB, $hengL, $shuB, $shuL, $fangB, $fangL, $yuanB, $yuanL);
     }
     echo ("提交成功！");
 } catch (Exception $e) {

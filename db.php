@@ -29,18 +29,18 @@ function selectUserInfo($name)
     }
 }
 
-function updateUserInfo($name, $baseInfo, $table1, $table2, $table3, $table4, $hengB, $hengL, $shuB, $shuL, $fangB, $fangL, $yuanB, $yuanL)
+function updateUserInfo($name, $baseInfo, $table1, $table2, $table3, $table4, $table5, $hengB, $hengL, $shuB, $shuL, $fangB, $fangL, $yuanB, $yuanL)
 {
     $conn = creatCon();
-    $sql = "update userinfo set baseInfo='" . $baseInfo . "'" . ", table1='" . $table1 . "'" . ", table2='" . $table2 . "'" . ", table3='" . $table3 . "'" . ", table4='" . $table4 . "'" . ", hengB='" . $hengB . "'" . ", hengL='" . $hengL . "'" . ", shuB='" . $shuB . "'" . ", shuL='" . $shuL . "'" . ", fangB='" . $fangB . "'" . ", fangL='" . $fangL . "'" . ", yuanB='" . $yuanB . "'" . ", yuanL='" . $yuanL . "'" . " where name='" . $name . "'";
+    $sql = "update userinfo set baseInfo='" . $baseInfo . "'" . ", table1='" . $table1 . "'" . ", table2='" . $table2 . "'" . ", table3='" . $table3 . "'" . ", table4='" . $table4 . "'" . ", table5='" . $table5 . "'" . ", hengB='" . $hengB . "'" . ", hengL='" . $hengL . "'" . ", shuB='" . $shuB . "'" . ", shuL='" . $shuL . "'" . ", fangB='" . $fangB . "'" . ", fangL='" . $fangL . "'" . ", yuanB='" . $yuanB . "'" . ", yuanL='" . $yuanL . "'" . " where name='" . $name . "'";
     mysqli_query($conn, $sql);
     mysqli_close($conn);
 }
 
-function insertUserInfo($name, $baseInfo, $table1, $table2, $table3, $table4, $hengB, $hengL, $shuB, $shuL, $fangB, $fangL, $yuanB, $yuanL)
+function insertUserInfo($name, $baseInfo, $table1, $table2, $table3, $table4, $table5, $hengB, $hengL, $shuB, $shuL, $fangB, $fangL, $yuanB, $yuanL)
 {
     $conn = creatCon();
-    $sql = "insert into userinfo (name,baseInfo,table1,table2,table3,table4,hengB,hengL,shuB,shuL,fangB,fangL,yuanB,yuanL) values('" . $name . "','" . $baseInfo . "','" . $table1 . "','" . $table2 . "','" . $table3 . "','" . $table4 . "','" . $hengB . "','" . $hengL . "','" . $shuB . "','" . $shuL . "','" . $fangB . "','" . $fangL . "','" . $yuanB . "','" . $yuanL . "')";
+    $sql = "insert into userinfo (name,baseInfo,table1,table2,table3,table4,table5,hengB,hengL,shuB,shuL,fangB,fangL,yuanB,yuanL) values('" . $name . "','" . $baseInfo . "','" . $table1 . "','" . $table2 . "','" . $table3 . "','" . $table4 . "','" . $table5 . "','" . $hengB . "','" . $hengL . "','" . $shuB . "','" . $shuL . "','" . $fangB . "','" . $fangL . "','" . $yuanB . "','" . $yuanL . "')";
     mysqli_query($conn, $sql);
     mysqli_close($conn);
 }

@@ -16,6 +16,7 @@ try {
         $userInfo->table2 = $row["table2"];
         $userInfo->table3 = $row["table3"];
         $userInfo->table4 = $row["table4"];
+        $userInfo->table5 = $row["table5"];
         $userInfo->hengB = $row["hengB"];
         $userInfo->hengL = $row["hengL"];
         $userInfo->shuB = $row["shuB"];
