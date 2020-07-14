@@ -2,81 +2,42 @@
 <html lang="en">
 
 <head>
-<meta
-	http-equiv="Content-Type"
-	content="text/html; charset=utf-8"
->
-<meta
-	name="viewport"
-	content="width=device-width, initial-scale = 1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0"
->
-<title>问卷调查</title>
-<script src="./js/jquery-3.3.1.min.js"></script>
-<script src="./js/common.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <title>问卷调查</title>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/common.js"></script>
 </head>
 
 <body>
-	<form
-		action="form.php"
-		method="POST"
-	>
-		<table
-			style="border-collapse: collapse;"
-			headFixMode="true"
-		>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>
-					<h4 style="color: red;">您好！我是来自大连医科大学的研究生，因毕业论文需要特邀请您进行问卷作答。
-						问卷结果仅限于学术研究，资料收回后我们也将会对其严格保密。答案无对错之分，确保您的选择能真实地反映自己的情况，请勿漏填或多填。</h4>
-				</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>
-					<h3>一.基本资料</h3>
-				</td>
-			</tr>
-			<tr>
-				<td style="text-align: left;">姓名：</td>
-				<td style="text-align: left;"><input
-					name="name"
-					id="name"
-					type="text"
-					maxlength="4"
-					placeholder="请输入姓名"
-					onmouseout="nameChang()"
-					autocomplete="on"
-				></td>
-			</tr>
-			<tr>
-				<td style="text-align: left;">年龄：</td>
-				<td style="text-align: left;"><input
-					name="age"
-					type="number"
-					maxlength="3"
-					placeholder="请输入年龄"
-				></td>
-			</tr>
-			<tr>
-				<td style="text-align: left;">性别：</td>
-				<td style="text-align: left;"><input
-					type="radio"
-					name="sex"
-					value="1"
-				>男<input
-					type="radio"
-					name="sex"
-					value="2"
-				>女</td>
-			</tr>
-			<tr>
-				<td style="text-align: left;">目前职业：</td>
-				<td style="text-align: left;"><select name="career">
+    <form action="form.php" method="POST">
+        <table style="border-collapse: collapse;" headFixMode="true">
+            <tr>
+                <td style="text-align: left;" colspan="2">
+                    <h4 style="color: red;">您好！我是来自大连医科大学的研究生，因毕业论文需要特邀请您进行问卷作答。 问卷结果仅限于学术研究，资料收回后我们也将会对其严格保密。答案无对错之分，确保您的选择能真实地反映自己的情况，请勿漏填或多填。
+                    </h4>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">
+                    <h3>一.基本资料</h3>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;">姓名：</td>
+                <td style="text-align: left;"><input name="name" id="name" type="text" maxlength="4" placeholder="请输入姓名" onmouseout="nameChang()" autocomplete="on"></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;">年龄：</td>
+                <td style="text-align: left;"><input name="age" type="number" maxlength="3" placeholder="请输入年龄"></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;">性别：</td>
+                <td style="text-align: left;"><input type="radio" name="sex" value="1">男<input type="radio" name="sex" value="2">女</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;">目前职业：</td>
+                <td style="text-align: left;"><select name="career">
 						<option value="1">学生</option>
 						<option value="2">国家机构或事业单位</option>
 						<option value="3">私企个体</option>
@@ -84,5698 +45,1369 @@
 						<option value="5">演艺业</option>
 						<option value="6">其他</option>
 				</select></td>
-			</tr>
-			<tr>
-				<td style="text-align: left;">整容次数：</td>
-				<td style="text-align: left;"><select name="zhengrongNum">
+            </tr>
+            <tr>
+                <td style="text-align: left;">整容次数：</td>
+                <td style="text-align: left;"><select name="zhengrongNum">
 						<option value="1">一次</option>
 						<option value="2">二次</option>
 						<option value="3">三次</option>
 						<option value="4">更多</option>
 				</select></td>
-			</tr>
-			<tr>
-				<td style="text-align: left;">受教育程度：</td>
-				<td style="text-align: left;"><select name="edu">
+            </tr>
+            <tr>
+                <td style="text-align: left;">受教育程度：</td>
+                <td style="text-align: left;"><select name="edu">
 						<option value="1">初中及以下</option>
 						<option value="2">高中</option>
 						<option value="3">大专</option>
 						<option value="4">本科</option>
 						<option value="5">硕士及以上</option>
 				</select></td>
-			</tr>
-			<tr>
-				<td style="text-align: left;">月收入：</td>
-				<td style="text-align: left;"><select name="income">
+            </tr>
+            <tr>
+                <td style="text-align: left;">月收入：</td>
+                <td style="text-align: left;"><select name="income">
 						<option value="1">1000 以下</option>
 						<option value="2">1000-2999</option>
 						<option value="3">3000-4999</option>
 						<option value="4">5000-6999</option>
 						<option value="5">7000 以上</option>
 				</select></td>
-			</tr>
-			<tr>
-				<td style="text-align: left;">亲友支持：</td>
-				<td style="text-align: left;"><input
-					type="radio"
-					name="support"
-					value="1"
-				>非常支持<input
-					type="radio"
-					name="support"
-					value="2"
-				>中立<input
-					type="radio"
-					name="support"
-					value="3"
-				>不支持</td>
-			</tr>
-			<tr>
-				<td style="text-align: left;">关注美容信息：</td>
-				<td style="text-align: left;"><input
-					type="radio"
-					name="beautyInfo"
-					value="1"
-				>经常<input
-					type="radio"
-					name="beautyInfo"
-					value="2"
-				>偶尔<input
-					type="radio"
-					name="beautyInfo"
-					value="3"
-				>从不</td>
-			</tr>
-			<tr>
-				<td style="text-align: left;">术前期待：</td>
-				<td style="text-align: left;"><input
-					type="radio"
-					name="expect"
-					value="1"
-				>高期待<input
-					type="radio"
-					name="expect"
-					value="2"
-				>期待适中</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>您认为有整容念头的原因是什么？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="zhengrongReason"
-					value="1"
-				>1、自己不满意 <br> <input
-					type="radio"
-					name="zhengrongReason"
-					value="2"
-				>2、想得到异性的爱慕 <br> <input
-					type="radio"
-					name="zhengrongReason"
-					value="3"
-				>3、工作需要 <br> <input
-					type="radio"
-					name="zhengrongReason"
-					value="4"
-				>4、受周围人的影响 <br> <input
-					type="radio"
-					name="zhengrongReason"
-					value="5"
-				>5、因为遭受到嘲笑或歧视 <br> <input
-					type="radio"
-					name="zhengrongReason"
-					value="6"
-				>6、广告</td>
-			</tr>
+            </tr>
+            <tr>
+                <td style="text-align: left;">亲友支持：</td>
+                <td style="text-align: left;"><input type="radio" name="support" value="1">非常支持<input type="radio" name="support" value="2">中立<input type="radio" name="support" value="3">不支持</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;">关注美容信息：</td>
+                <td style="text-align: left;"><input type="radio" name="beautyInfo" value="1">经常<input type="radio" name="beautyInfo" value="2">偶尔<input type="radio" name="beautyInfo" value="3">从不</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;">术前期待：</td>
+                <td style="text-align: left;"><input type="radio" name="expect" value="1">高期待<input type="radio" name="expect" value="2">期待适中</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">您认为有整容念头的原因是什么？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="zhengrongReason" value="1">1、自己不满意 <br> <input type="radio" name="zhengrongReason" value="2">2、想得到异性的爱慕 <br> <input type="radio" name="zhengrongReason" value="3">3、工作需要 <br> <input type="radio" name="zhengrongReason"
+                        value="4">4、受周围人的影响 <br> <input type="radio" name="zhengrongReason" value="5">5、因为遭受到嘲笑或歧视 <br> <input type="radio" name="zhengrongReason" value="6">6、广告</td>
+            </tr>
 
-			<tr>
-				<td
-					style="text-align: left; color: red"
-					colspan="2"
-				>指导语：以下列出了有些人可能会有的问题，请仔细地阅读每一条， 然后根据最近一星期以内下述情况影响您的实际感觉，选择“是”或“否”</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>1.你是否有许多不同的业余爱好？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two1"
-					value="1"
-				>是<input
-					type="radio"
-					name="two1"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>2.你是否在做任何事情以前都要停下来仔细思考？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two2"
-					value="1"
-				>是<input
-					type="radio"
-					name="two2"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>3.你的心境是否常有起伏？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two3"
-					value="1"
-				>是<input
-					type="radio"
-					name="two3"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>4.你曾有过明知是别人的功劳而你去接受奖励的事吗？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two4"
-					value="1"
-				>是<input
-					type="radio"
-					name="two4"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>5.你是否健谈？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two5"
-					value="1"
-				>是<input
-					type="radio"
-					name="two5"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>6.欠债会使你不安吗？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two6"
-					value="1"
-				>是<input
-					type="radio"
-					name="two6"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>7.你曾无缘无故觉得“真是难受”吗？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two7"
-					value="1"
-				>是<input
-					type="radio"
-					name="two7"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>8.你曾贪图过份外之物吗？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two8"
-					value="1"
-				>是<input
-					type="radio"
-					name="two8"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>9.你是否在晚上小心翼翼地关好门窗？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two9"
-					value="1"
-				>是<input
-					type="radio"
-					name="two9"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>10.你是否比较活跃？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two10"
-					value="1"
-				>是<input
-					type="radio"
-					name="two10"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>11.你在见到一小孩或一动物受折磨时是否会感到非常难过？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two11"
-					value="1"
-				>是<input
-					type="radio"
-					name="two11"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>12.你常常为自己不该做而做了的事，不该说而说了的话而紧张？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two12"
-					value="1"
-				>是<input
-					type="radio"
-					name="two12"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>13.你喜欢跳降落伞吗？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two13"
-					value="1"
-				>是<input
-					type="radio"
-					name="two13"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>14.通常你能在热闹联欢会中尽情地玩吗？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two14"
-					value="1"
-				>是<input
-					type="radio"
-					name="two14"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>15.你容易激动吗？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two15"
-					value="1"
-				>是<input
-					type="radio"
-					name="two15"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>16.你曾经将自己的过错推给别人吗？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two16"
-					value="1"
-				>是<input
-					type="radio"
-					name="two16"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>17.你喜欢会见陌生人吗？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two17"
-					value="1"
-				>是<input
-					type="radio"
-					name="two17"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>18.你是否相信保险制度是一种好办法？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two18"
-					value="1"
-				>是<input
-					type="radio"
-					name="two18"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>19.你是一个容易伤感情的人吗？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two19"
-					value="1"
-				>是<input
-					type="radio"
-					name="two19"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>20.你所有的习惯都是好的吗？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two20"
-					value="1"
-				>是<input
-					type="radio"
-					name="two20"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>21.在社交场合你是否总不愿露面？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two21"
-					value="1"
-				>是<input
-					type="radio"
-					name="two21"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>22.你会服用奇异或危险作用的药物吗？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two22"
-					value="1"
-				>是<input
-					type="radio"
-					name="two22"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>23.你常有“厌倦”的感觉吗？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two23"
-					value="1"
-				>是<input
-					type="radio"
-					name="two23"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>24.你曾拿过别人的东西吗（哪怕一针一线）？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two24"
-					value="1"
-				>是<input
-					type="radio"
-					name="two24"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>25.你是否常爱外出？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two25"
-					value="1"
-				>是<input
-					type="radio"
-					name="two25"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>26.你是否从伤害你所宠爱的人而感到乐趣？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two26"
-					value="1"
-				>是<input
-					type="radio"
-					name="two26"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>27.你常为有罪恶之感所苦恼吗？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two27"
-					value="1"
-				>是<input
-					type="radio"
-					name="two27"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>28.你在谈论中是否有时不懂装懂？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two28"
-					value="1"
-				>是<input
-					type="radio"
-					name="two28"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>29.你是否宁愿去看书也不愿去多见人？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two29"
-					value="1"
-				>是<input
-					type="radio"
-					name="two29"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>30.你有要伤害你的仇人吗？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two30"
-					value="1"
-				>是<input
-					type="radio"
-					name="two30"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>31.你觉得自己是一个神经过敏的人吗？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two31"
-					value="1"
-				>是<input
-					type="radio"
-					name="two31"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>32.对人有所失礼时你是否经常要表示歉意？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two32"
-					value="1"
-				>是<input
-					type="radio"
-					name="two32"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>33.你有许多朋友吗？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two33"
-					value="1"
-				>是<input
-					type="radio"
-					name="two33"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>34.你是否喜爱讲些有时确能伤害人的笑话？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two34"
-					value="1"
-				>是<input
-					type="radio"
-					name="two34"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>35.你是一个多忧多虑的人吗？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two35"
-					value="1"
-				>是<input
-					type="radio"
-					name="two35"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>36.你在童年是否按照吩咐要做什么便做什么，毫无怨言？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two36"
-					value="1"
-				>是<input
-					type="radio"
-					name="two36"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>37.你认为你是一个乐天派吗？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two37"
-					value="1"
-				>是<input
-					type="radio"
-					name="two37"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>38.你很讲究礼貌和整洁吗？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two38"
-					value="1"
-				>是<input
-					type="radio"
-					name="two38"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>39.你是否总在担心会发生可怕的事情？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two39"
-					value="1"
-				>是<input
-					type="radio"
-					name="two39"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>40.你曾损坏或遗失过别人的东西吗？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two40"
-					value="1"
-				>是<input
-					type="radio"
-					name="two40"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>41.交新朋友时一般是你采取主动吗？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two41"
-					value="1"
-				>是<input
-					type="radio"
-					name="two41"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>42.当别人向你诉苦时，你是否容易理解他们的苦衷？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two42"
-					value="1"
-				>是<input
-					type="radio"
-					name="two42"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>43.你认为自己很紧张，如同“拉紧的弦”一样吗？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two43"
-					value="1"
-				>是<input
-					type="radio"
-					name="two43"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>44.在没有废纸篓时，你是否将废纸扔在地板上？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two44"
-					value="1"
-				>是<input
-					type="radio"
-					name="two44"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>45.当你与别人在一起时，你是否言语很少？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two45"
-					value="1"
-				>是<input
-					type="radio"
-					name="two45"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>46.你是否认为结婚制度过时了，应废止？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two46"
-					value="1"
-				>是<input
-					type="radio"
-					name="two46"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>47.你是否有时感到自己可怜？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two47"
-					value="1"
-				>是<input
-					type="radio"
-					name="two47"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>48.你是否有时有点自夸？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two48"
-					value="1"
-				>是<input
-					type="radio"
-					name="two48"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>49.你是否很容易将一个沉寂的集会弄得活跃起来？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two49"
-					value="1"
-				>是<input
-					type="radio"
-					name="two49"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>50.你是否讨厌那种小心翼翼开车的人？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two50"
-					value="1"
-				>是<input
-					type="radio"
-					name="two50"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>51.你为你的健康担忧吗？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two51"
-					value="1"
-				>是<input
-					type="radio"
-					name="two51"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>52.你曾讲过什么人的坏话吗？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two52"
-					value="1"
-				>是<input
-					type="radio"
-					name="two52"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>53.你是否喜欢对朋友讲笑话和有趣的故事？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two53"
-					value="1"
-				>是<input
-					type="radio"
-					name="two53"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>54.你小时候曾对父母粗暴无礼吗？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two54"
-					value="1"
-				>是<input
-					type="radio"
-					name="two54"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>55.你是否喜欢与人混在一起？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two55"
-					value="1"
-				>是<input
-					type="radio"
-					name="two55"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>56.你如知道自己工作有错误，这会使你感到难过吗？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two56"
-					value="1"
-				>是<input
-					type="radio"
-					name="two56"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>57.你患失眠吗？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two57"
-					value="1"
-				>是<input
-					type="radio"
-					name="two57"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>58.你吃饭前必定洗手吗？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two58"
-					value="1"
-				>是<input
-					type="radio"
-					name="two58"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>59.你常无缘无故感到无精打采和倦怠吗？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two59"
-					value="1"
-				>是<input
-					type="radio"
-					name="two59"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>60.和别人玩游戏时，有过欺骗行为吗？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two60"
-					value="1"
-				>是<input
-					type="radio"
-					name="two60"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>61.你是否喜欢从事一些动作迅速的工作？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two61"
-					value="1"
-				>是<input
-					type="radio"
-					name="two61"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>62.你的母亲是一位善良的妇人吗？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two62"
-					value="1"
-				>是<input
-					type="radio"
-					name="two62"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>63.你是否常常觉得人生非常无味？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two63"
-					value="1"
-				>是<input
-					type="radio"
-					name="two63"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>64.你曾利用过某人为自己取得好处吗？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two64"
-					value="1"
-				>是<input
-					type="radio"
-					name="two64"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>65.你是否常常参加许多活动，超过你的时间所允许？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two65"
-					value="1"
-				>是<input
-					type="radio"
-					name="two65"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>66.是否有几个人总在躲避你？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two66"
-					value="1"
-				>是<input
-					type="radio"
-					name="two66"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>67.你是否为你的容貌而很烦恼？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two67"
-					value="1"
-				>是<input
-					type="radio"
-					name="two67"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>68.你是否觉得人们为了未来有保障而办理储蓄和保险所花的时间太多？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two68"
-					value="1"
-				>是<input
-					type="radio"
-					name="two68"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>69.你曾有过不如死了好的想法吗？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two69"
-					value="1"
-				>是<input
-					type="radio"
-					name="two69"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>70.如果有把握永远不会被别人发现，你会逃税吗？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two70"
-					value="1"
-				>是<input
-					type="radio"
-					name="two70"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>71.你能使一个集会顺利进行吗？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two71"
-					value="1"
-				>是<input
-					type="radio"
-					name="two71"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>72.你能克制自己不对人无礼吗？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two72"
-					value="1"
-				>是<input
-					type="radio"
-					name="two72"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>73.遇到一次难堪的经历后，你是否在一段很长时间内还感到难过？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two73"
-					value="1"
-				>是<input
-					type="radio"
-					name="two73"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>74.你患有神经过敏吗？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two74"
-					value="1"
-				>是<input
-					type="radio"
-					name="two74"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>75.你曾经故意说些什么来伤害别人的感情吗？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two75"
-					value="1"
-				>是<input
-					type="radio"
-					name="two75"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>76.你与别人的友谊是否容易破裂，虽然不是你的过错?</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two76"
-					value="1"
-				>是<input
-					type="radio"
-					name="two76"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>77.你常感到孤独吗？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two77"
-					value="1"
-				>是<input
-					type="radio"
-					name="two77"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>78 当人家寻你的差错，挑你工作中的缺点时，你是否容易精神上受挫？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two78"
-					value="1"
-				>是<input
-					type="radio"
-					name="two78"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>79.你赴约或上班迟到过吗？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two79"
-					value="1"
-				>是<input
-					type="radio"
-					name="two79"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>80.你喜欢忙忙碌碌的过日子吗？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two80"
-					value="1"
-				>是<input
-					type="radio"
-					name="two80"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>81.你愿意别人怕你吗？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two81"
-					value="1"
-				>是<input
-					type="radio"
-					name="two81"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>82.你是否觉得有时浑身是劲，有时却懒洋洋的？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two82"
-					value="1"
-				>是<input
-					type="radio"
-					name="two82"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>83.你有时把今天的事拖到明天去做吗？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two83"
-					value="1"
-				>是<input
-					type="radio"
-					name="two83"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>84.别人会认为你是生气勃勃吗？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two84"
-					value="1"
-				>是<input
-					type="radio"
-					name="two84"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>85.别人是否对你说了很多谎话？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two85"
-					value="1"
-				>是<input
-					type="radio"
-					name="two85"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>86.你是否容易对某些事情冒火？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two86"
-					value="1"
-				>是<input
-					type="radio"
-					name="two86"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>87.当你犯了错误时，你是否常常愿意承认它？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two87"
-					value="1"
-				>是<input
-					type="radio"
-					name="two87"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>88.你会为一动物落入圈套而被捉住时而感到难过吗？</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="two88"
-					value="1"
-				>是<input
-					type="radio"
-					name="two88"
-					value="2"
-				>否</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: right;"
-					colspan="2"
-				><input
-					type="submit"
-					value="保存"
-				></td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left; color: red"
-					colspan="2"
-				>指导语：以下列出了有些人可能会有的问题，请仔细地阅读每一条，然 后根据最近一星期以内下述情况影响您的实际感觉，在每个问题后标明该题 的程度得分。其中，“没有”选 1，“很轻”选 2，“中等”选 3， “偏重” 选
-					4，“严重”选 5。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>1.头痛。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three1"
-					value="1"
-				>1<input
-					type="radio"
-					name="three1"
-					value="2"
-				>2<input
-					type="radio"
-					name="three1"
-					value="3"
-				>3<input
-					type="radio"
-					name="three1"
-					value="4"
-				>4<input
-					type="radio"
-					name="three1"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>2.神经过敏，心中不踏实。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three2"
-					value="1"
-				>1<input
-					type="radio"
-					name="three2"
-					value="2"
-				>2<input
-					type="radio"
-					name="three2"
-					value="3"
-				>3<input
-					type="radio"
-					name="three2"
-					value="4"
-				>4<input
-					type="radio"
-					name="three2"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>3.头脑中有不必要的想法或字句盘旋。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three3"
-					value="1"
-				>1<input
-					type="radio"
-					name="three3"
-					value="2"
-				>2<input
-					type="radio"
-					name="three3"
-					value="3"
-				>3<input
-					type="radio"
-					name="three3"
-					value="4"
-				>4<input
-					type="radio"
-					name="three3"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>4.头昏或昏倒。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three4"
-					value="1"
-				>1<input
-					type="radio"
-					name="three4"
-					value="2"
-				>2<input
-					type="radio"
-					name="three4"
-					value="3"
-				>3<input
-					type="radio"
-					name="three4"
-					value="4"
-				>4<input
-					type="radio"
-					name="three4"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>5.对异性的兴趣减退。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three5"
-					value="1"
-				>1<input
-					type="radio"
-					name="three5"
-					value="2"
-				>2<input
-					type="radio"
-					name="three5"
-					value="3"
-				>3<input
-					type="radio"
-					name="three5"
-					value="4"
-				>4<input
-					type="radio"
-					name="three5"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>6.对旁人责备求全。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three6"
-					value="1"
-				>1<input
-					type="radio"
-					name="three6"
-					value="2"
-				>2<input
-					type="radio"
-					name="three6"
-					value="3"
-				>3<input
-					type="radio"
-					name="three6"
-					value="4"
-				>4<input
-					type="radio"
-					name="three6"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>7.感到别人能控制您的思想。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three7"
-					value="1"
-				>1<input
-					type="radio"
-					name="three7"
-					value="2"
-				>2<input
-					type="radio"
-					name="three7"
-					value="3"
-				>3<input
-					type="radio"
-					name="three7"
-					value="4"
-				>4<input
-					type="radio"
-					name="three7"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>8.责怪别人制造麻烦。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three8"
-					value="1"
-				>1<input
-					type="radio"
-					name="three8"
-					value="2"
-				>2<input
-					type="radio"
-					name="three8"
-					value="3"
-				>3<input
-					type="radio"
-					name="three8"
-					value="4"
-				>4<input
-					type="radio"
-					name="three8"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>9.忘记性大。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three9"
-					value="1"
-				>1<input
-					type="radio"
-					name="three9"
-					value="2"
-				>2<input
-					type="radio"
-					name="three9"
-					value="3"
-				>3<input
-					type="radio"
-					name="three9"
-					value="4"
-				>4<input
-					type="radio"
-					name="three9"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>10.担心自己的衣饰整齐及仪态的端正。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three10"
-					value="1"
-				>1<input
-					type="radio"
-					name="three10"
-					value="2"
-				>2<input
-					type="radio"
-					name="three10"
-					value="3"
-				>3<input
-					type="radio"
-					name="three10"
-					value="4"
-				>4<input
-					type="radio"
-					name="three10"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>11.容易烦恼和激动。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three11"
-					value="1"
-				>1<input
-					type="radio"
-					name="three11"
-					value="2"
-				>2<input
-					type="radio"
-					name="three11"
-					value="3"
-				>3<input
-					type="radio"
-					name="three11"
-					value="4"
-				>4<input
-					type="radio"
-					name="three11"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>12.胸痛。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three12"
-					value="1"
-				>1<input
-					type="radio"
-					name="three12"
-					value="2"
-				>2<input
-					type="radio"
-					name="three12"
-					value="3"
-				>3<input
-					type="radio"
-					name="three12"
-					value="4"
-				>4<input
-					type="radio"
-					name="three12"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>13.害怕空旷的场所或街道。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three13"
-					value="1"
-				>1<input
-					type="radio"
-					name="three13"
-					value="2"
-				>2<input
-					type="radio"
-					name="three13"
-					value="3"
-				>3<input
-					type="radio"
-					name="three13"
-					value="4"
-				>4<input
-					type="radio"
-					name="three13"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>14.感到自己的精力下降，活动减慢。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three14"
-					value="1"
-				>1<input
-					type="radio"
-					name="three14"
-					value="2"
-				>2<input
-					type="radio"
-					name="three14"
-					value="3"
-				>3<input
-					type="radio"
-					name="three14"
-					value="4"
-				>4<input
-					type="radio"
-					name="three14"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>15.想结束自己的生命。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three15"
-					value="1"
-				>1<input
-					type="radio"
-					name="three15"
-					value="2"
-				>2<input
-					type="radio"
-					name="three15"
-					value="3"
-				>3<input
-					type="radio"
-					name="three15"
-					value="4"
-				>4<input
-					type="radio"
-					name="three15"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>16.听到旁人听不到的声音。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three16"
-					value="1"
-				>1<input
-					type="radio"
-					name="three16"
-					value="2"
-				>2<input
-					type="radio"
-					name="three16"
-					value="3"
-				>3<input
-					type="radio"
-					name="three16"
-					value="4"
-				>4<input
-					type="radio"
-					name="three16"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>17.发抖。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three17"
-					value="1"
-				>1<input
-					type="radio"
-					name="three17"
-					value="2"
-				>2<input
-					type="radio"
-					name="three17"
-					value="3"
-				>3<input
-					type="radio"
-					name="three17"
-					value="4"
-				>4<input
-					type="radio"
-					name="three17"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>18.感到大多数人都不可信任。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three18"
-					value="1"
-				>1<input
-					type="radio"
-					name="three18"
-					value="2"
-				>2<input
-					type="radio"
-					name="three18"
-					value="3"
-				>3<input
-					type="radio"
-					name="three18"
-					value="4"
-				>4<input
-					type="radio"
-					name="three18"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>19.胃口不好。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three19"
-					value="1"
-				>1<input
-					type="radio"
-					name="three19"
-					value="2"
-				>2<input
-					type="radio"
-					name="three19"
-					value="3"
-				>3<input
-					type="radio"
-					name="three19"
-					value="4"
-				>4<input
-					type="radio"
-					name="three19"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>20.容易哭泣。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three20"
-					value="1"
-				>1<input
-					type="radio"
-					name="three20"
-					value="2"
-				>2<input
-					type="radio"
-					name="three20"
-					value="3"
-				>3<input
-					type="radio"
-					name="three20"
-					value="4"
-				>4<input
-					type="radio"
-					name="three20"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>21.同异性相处时感到害羞不自在。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three21"
-					value="1"
-				>1<input
-					type="radio"
-					name="three21"
-					value="2"
-				>2<input
-					type="radio"
-					name="three21"
-					value="3"
-				>3<input
-					type="radio"
-					name="three21"
-					value="4"
-				>4<input
-					type="radio"
-					name="three21"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>22.感到受骗，中了圈套或有人想抓住您。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three22"
-					value="1"
-				>1<input
-					type="radio"
-					name="three22"
-					value="2"
-				>2<input
-					type="radio"
-					name="three22"
-					value="3"
-				>3<input
-					type="radio"
-					name="three22"
-					value="4"
-				>4<input
-					type="radio"
-					name="three22"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>23.无缘无故地突然感到害怕。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three23"
-					value="1"
-				>1<input
-					type="radio"
-					name="three23"
-					value="2"
-				>2<input
-					type="radio"
-					name="three23"
-					value="3"
-				>3<input
-					type="radio"
-					name="three23"
-					value="4"
-				>4<input
-					type="radio"
-					name="three23"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>24.自己不能控制地大发脾气。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three24"
-					value="1"
-				>1<input
-					type="radio"
-					name="three24"
-					value="2"
-				>2<input
-					type="radio"
-					name="three24"
-					value="3"
-				>3<input
-					type="radio"
-					name="three24"
-					value="4"
-				>4<input
-					type="radio"
-					name="three24"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>25.怕单独出门。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three25"
-					value="1"
-				>1<input
-					type="radio"
-					name="three25"
-					value="2"
-				>2<input
-					type="radio"
-					name="three25"
-					value="3"
-				>3<input
-					type="radio"
-					name="three25"
-					value="4"
-				>4<input
-					type="radio"
-					name="three25"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>26.经常责怪自己。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three26"
-					value="1"
-				>1<input
-					type="radio"
-					name="three26"
-					value="2"
-				>2<input
-					type="radio"
-					name="three26"
-					value="3"
-				>3<input
-					type="radio"
-					name="three26"
-					value="4"
-				>4<input
-					type="radio"
-					name="three26"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>27.腰痛。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three27"
-					value="1"
-				>1<input
-					type="radio"
-					name="three27"
-					value="2"
-				>2<input
-					type="radio"
-					name="three27"
-					value="3"
-				>3<input
-					type="radio"
-					name="three27"
-					value="4"
-				>4<input
-					type="radio"
-					name="three27"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>28.感到难以完成任务。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three28"
-					value="1"
-				>1<input
-					type="radio"
-					name="three28"
-					value="2"
-				>2<input
-					type="radio"
-					name="three28"
-					value="3"
-				>3<input
-					type="radio"
-					name="three28"
-					value="4"
-				>4<input
-					type="radio"
-					name="three28"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>29.感到孤独。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three29"
-					value="1"
-				>1<input
-					type="radio"
-					name="three29"
-					value="2"
-				>2<input
-					type="radio"
-					name="three29"
-					value="3"
-				>3<input
-					type="radio"
-					name="three29"
-					value="4"
-				>4<input
-					type="radio"
-					name="three29"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>30.感到苦闷。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three30"
-					value="1"
-				>1<input
-					type="radio"
-					name="three30"
-					value="2"
-				>2<input
-					type="radio"
-					name="three30"
-					value="3"
-				>3<input
-					type="radio"
-					name="three30"
-					value="4"
-				>4<input
-					type="radio"
-					name="three30"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>31.过分担忧。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three31"
-					value="1"
-				>1<input
-					type="radio"
-					name="three31"
-					value="2"
-				>2<input
-					type="radio"
-					name="three31"
-					value="3"
-				>3<input
-					type="radio"
-					name="three31"
-					value="4"
-				>4<input
-					type="radio"
-					name="three31"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>32.对事物不感兴趣。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three32"
-					value="1"
-				>1<input
-					type="radio"
-					name="three32"
-					value="2"
-				>2<input
-					type="radio"
-					name="three32"
-					value="3"
-				>3<input
-					type="radio"
-					name="three32"
-					value="4"
-				>4<input
-					type="radio"
-					name="three32"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>33.感到害怕。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three33"
-					value="1"
-				>1<input
-					type="radio"
-					name="three33"
-					value="2"
-				>2<input
-					type="radio"
-					name="three33"
-					value="3"
-				>3<input
-					type="radio"
-					name="three33"
-					value="4"
-				>4<input
-					type="radio"
-					name="three33"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>34.您的感情容易受到伤害。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three34"
-					value="1"
-				>1<input
-					type="radio"
-					name="three34"
-					value="2"
-				>2<input
-					type="radio"
-					name="three34"
-					value="3"
-				>3<input
-					type="radio"
-					name="three34"
-					value="4"
-				>4<input
-					type="radio"
-					name="three34"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>35.旁人能知道您的私下想法。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three35"
-					value="1"
-				>1<input
-					type="radio"
-					name="three35"
-					value="2"
-				>2<input
-					type="radio"
-					name="three35"
-					value="3"
-				>3<input
-					type="radio"
-					name="three35"
-					value="4"
-				>4<input
-					type="radio"
-					name="three35"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>36.感到别人不理解您、不同情您。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three36"
-					value="1"
-				>1<input
-					type="radio"
-					name="three36"
-					value="2"
-				>2<input
-					type="radio"
-					name="three36"
-					value="3"
-				>3<input
-					type="radio"
-					name="three36"
-					value="4"
-				>4<input
-					type="radio"
-					name="three36"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>37.感到人们对您不友好，不喜欢您。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three37"
-					value="1"
-				>1<input
-					type="radio"
-					name="three37"
-					value="2"
-				>2<input
-					type="radio"
-					name="three37"
-					value="3"
-				>3<input
-					type="radio"
-					name="three37"
-					value="4"
-				>4<input
-					type="radio"
-					name="three37"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>38.做事必须做得很慢以保证做得正确。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three38"
-					value="1"
-				>1<input
-					type="radio"
-					name="three38"
-					value="2"
-				>2<input
-					type="radio"
-					name="three38"
-					value="3"
-				>3<input
-					type="radio"
-					name="three38"
-					value="4"
-				>4<input
-					type="radio"
-					name="three38"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>39.心跳得很厉害。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three39"
-					value="1"
-				>1<input
-					type="radio"
-					name="three39"
-					value="2"
-				>2<input
-					type="radio"
-					name="three39"
-					value="3"
-				>3<input
-					type="radio"
-					name="three39"
-					value="4"
-				>4<input
-					type="radio"
-					name="three39"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>40.恶心或胃部不舒服。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three40"
-					value="1"
-				>1<input
-					type="radio"
-					name="three40"
-					value="2"
-				>2<input
-					type="radio"
-					name="three40"
-					value="3"
-				>3<input
-					type="radio"
-					name="three40"
-					value="4"
-				>4<input
-					type="radio"
-					name="three40"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>41.感到比不上他人。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three41"
-					value="1"
-				>1<input
-					type="radio"
-					name="three41"
-					value="2"
-				>2<input
-					type="radio"
-					name="three41"
-					value="3"
-				>3<input
-					type="radio"
-					name="three41"
-					value="4"
-				>4<input
-					type="radio"
-					name="three41"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>42.肌肉酸痛。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three42"
-					value="1"
-				>1<input
-					type="radio"
-					name="three42"
-					value="2"
-				>2<input
-					type="radio"
-					name="three42"
-					value="3"
-				>3<input
-					type="radio"
-					name="three42"
-					value="4"
-				>4<input
-					type="radio"
-					name="three42"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>43.感到有人在监视您、谈论您。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three43"
-					value="1"
-				>1<input
-					type="radio"
-					name="three43"
-					value="2"
-				>2<input
-					type="radio"
-					name="three43"
-					value="3"
-				>3<input
-					type="radio"
-					name="three43"
-					value="4"
-				>4<input
-					type="radio"
-					name="three43"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>44.难以入睡。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three44"
-					value="1"
-				>1<input
-					type="radio"
-					name="three44"
-					value="2"
-				>2<input
-					type="radio"
-					name="three44"
-					value="3"
-				>3<input
-					type="radio"
-					name="three44"
-					value="4"
-				>4<input
-					type="radio"
-					name="three44"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>45.做事必须反复检查。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three45"
-					value="1"
-				>1<input
-					type="radio"
-					name="three45"
-					value="2"
-				>2<input
-					type="radio"
-					name="three45"
-					value="3"
-				>3<input
-					type="radio"
-					name="three45"
-					value="4"
-				>4<input
-					type="radio"
-					name="three45"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>46.难以作出决定。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three46"
-					value="1"
-				>1<input
-					type="radio"
-					name="three46"
-					value="2"
-				>2<input
-					type="radio"
-					name="three46"
-					value="3"
-				>3<input
-					type="radio"
-					name="three46"
-					value="4"
-				>4<input
-					type="radio"
-					name="three46"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>47.怕乘电车、公共汽车、地铁或火车。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three47"
-					value="1"
-				>1<input
-					type="radio"
-					name="three47"
-					value="2"
-				>2<input
-					type="radio"
-					name="three47"
-					value="3"
-				>3<input
-					type="radio"
-					name="three47"
-					value="4"
-				>4<input
-					type="radio"
-					name="three47"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>48.呼吸有困难。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three48"
-					value="1"
-				>1<input
-					type="radio"
-					name="three48"
-					value="2"
-				>2<input
-					type="radio"
-					name="three48"
-					value="3"
-				>3<input
-					type="radio"
-					name="three48"
-					value="4"
-				>4<input
-					type="radio"
-					name="three48"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>49.一阵阵发冷或发热。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three49"
-					value="1"
-				>1<input
-					type="radio"
-					name="three49"
-					value="2"
-				>2<input
-					type="radio"
-					name="three49"
-					value="3"
-				>3<input
-					type="radio"
-					name="three49"
-					value="4"
-				>4<input
-					type="radio"
-					name="three49"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>50.因为感到害怕而避开某些东西、场合或活动。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three50"
-					value="1"
-				>1<input
-					type="radio"
-					name="three50"
-					value="2"
-				>2<input
-					type="radio"
-					name="three50"
-					value="3"
-				>3<input
-					type="radio"
-					name="three50"
-					value="4"
-				>4<input
-					type="radio"
-					name="three50"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>51.脑子变空了。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three51"
-					value="1"
-				>1<input
-					type="radio"
-					name="three51"
-					value="2"
-				>2<input
-					type="radio"
-					name="three51"
-					value="3"
-				>3<input
-					type="radio"
-					name="three51"
-					value="4"
-				>4<input
-					type="radio"
-					name="three51"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>52.身体发麻或刺痛。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three52"
-					value="1"
-				>1<input
-					type="radio"
-					name="three52"
-					value="2"
-				>2<input
-					type="radio"
-					name="three52"
-					value="3"
-				>3<input
-					type="radio"
-					name="three52"
-					value="4"
-				>4<input
-					type="radio"
-					name="three52"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>53.喉咙有梗塞感。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three53"
-					value="1"
-				>1<input
-					type="radio"
-					name="three53"
-					value="2"
-				>2<input
-					type="radio"
-					name="three53"
-					value="3"
-				>3<input
-					type="radio"
-					name="three53"
-					value="4"
-				>4<input
-					type="radio"
-					name="three53"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>54.感到前途没有希望。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three54"
-					value="1"
-				>1<input
-					type="radio"
-					name="three54"
-					value="2"
-				>2<input
-					type="radio"
-					name="three54"
-					value="3"
-				>3<input
-					type="radio"
-					name="three54"
-					value="4"
-				>4<input
-					type="radio"
-					name="three54"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>55.不能集中注意。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three55"
-					value="1"
-				>1<input
-					type="radio"
-					name="three55"
-					value="2"
-				>2<input
-					type="radio"
-					name="three55"
-					value="3"
-				>3<input
-					type="radio"
-					name="three55"
-					value="4"
-				>4<input
-					type="radio"
-					name="three55"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>56.感到身体的某一部分软弱无力。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three56"
-					value="1"
-				>1<input
-					type="radio"
-					name="three56"
-					value="2"
-				>2<input
-					type="radio"
-					name="three56"
-					value="3"
-				>3<input
-					type="radio"
-					name="three56"
-					value="4"
-				>4<input
-					type="radio"
-					name="three56"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>57.感到紧张或容易紧张。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three57"
-					value="1"
-				>1<input
-					type="radio"
-					name="three57"
-					value="2"
-				>2<input
-					type="radio"
-					name="three57"
-					value="3"
-				>3<input
-					type="radio"
-					name="three57"
-					value="4"
-				>4<input
-					type="radio"
-					name="three57"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>58.感到手或脚发重。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three58"
-					value="1"
-				>1<input
-					type="radio"
-					name="three58"
-					value="2"
-				>2<input
-					type="radio"
-					name="three58"
-					value="3"
-				>3<input
-					type="radio"
-					name="three58"
-					value="4"
-				>4<input
-					type="radio"
-					name="three58"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>59.想到死亡的事。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three59"
-					value="1"
-				>1<input
-					type="radio"
-					name="three59"
-					value="2"
-				>2<input
-					type="radio"
-					name="three59"
-					value="3"
-				>3<input
-					type="radio"
-					name="three59"
-					value="4"
-				>4<input
-					type="radio"
-					name="three59"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>60.吃得太多。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three60"
-					value="1"
-				>1<input
-					type="radio"
-					name="three60"
-					value="2"
-				>2<input
-					type="radio"
-					name="three60"
-					value="3"
-				>3<input
-					type="radio"
-					name="three60"
-					value="4"
-				>4<input
-					type="radio"
-					name="three60"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>61.当别人看着您或谈论您时感到不自在。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three61"
-					value="1"
-				>1<input
-					type="radio"
-					name="three61"
-					value="2"
-				>2<input
-					type="radio"
-					name="three61"
-					value="3"
-				>3<input
-					type="radio"
-					name="three61"
-					value="4"
-				>4<input
-					type="radio"
-					name="three61"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>62.有一些不属于您自己的想法。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three62"
-					value="1"
-				>1<input
-					type="radio"
-					name="three62"
-					value="2"
-				>2<input
-					type="radio"
-					name="three62"
-					value="3"
-				>3<input
-					type="radio"
-					name="three62"
-					value="4"
-				>4<input
-					type="radio"
-					name="three62"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>63.有想打人或伤害他人的冲动。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three63"
-					value="1"
-				>1<input
-					type="radio"
-					name="three63"
-					value="2"
-				>2<input
-					type="radio"
-					name="three63"
-					value="3"
-				>3<input
-					type="radio"
-					name="three63"
-					value="4"
-				>4<input
-					type="radio"
-					name="three63"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>64.醒得太早。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three64"
-					value="1"
-				>1<input
-					type="radio"
-					name="three64"
-					value="2"
-				>2<input
-					type="radio"
-					name="three64"
-					value="3"
-				>3<input
-					type="radio"
-					name="three64"
-					value="4"
-				>4<input
-					type="radio"
-					name="three64"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>65.必须反复洗手、点数目或触摸某些东西。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three65"
-					value="1"
-				>1<input
-					type="radio"
-					name="three65"
-					value="2"
-				>2<input
-					type="radio"
-					name="three65"
-					value="3"
-				>3<input
-					type="radio"
-					name="three65"
-					value="4"
-				>4<input
-					type="radio"
-					name="three65"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>66.睡得不稳不深。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three66"
-					value="1"
-				>1<input
-					type="radio"
-					name="three66"
-					value="2"
-				>2<input
-					type="radio"
-					name="three66"
-					value="3"
-				>3<input
-					type="radio"
-					name="three66"
-					value="4"
-				>4<input
-					type="radio"
-					name="three66"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>67.有想摔坏或破坏东西的冲动。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three67"
-					value="1"
-				>1<input
-					type="radio"
-					name="three67"
-					value="2"
-				>2<input
-					type="radio"
-					name="three67"
-					value="3"
-				>3<input
-					type="radio"
-					name="three67"
-					value="4"
-				>4<input
-					type="radio"
-					name="three67"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>68.有一些别人没有的想法或念头。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three68"
-					value="1"
-				>1<input
-					type="radio"
-					name="three68"
-					value="2"
-				>2<input
-					type="radio"
-					name="three68"
-					value="3"
-				>3<input
-					type="radio"
-					name="three68"
-					value="4"
-				>4<input
-					type="radio"
-					name="three68"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>69.感到对别人神经过敏。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three69"
-					value="1"
-				>1<input
-					type="radio"
-					name="three69"
-					value="2"
-				>2<input
-					type="radio"
-					name="three69"
-					value="3"
-				>3<input
-					type="radio"
-					name="three69"
-					value="4"
-				>4<input
-					type="radio"
-					name="three69"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>70.在商店或电影院等人多的地方感到不自在。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three70"
-					value="1"
-				>1<input
-					type="radio"
-					name="three70"
-					value="2"
-				>2<input
-					type="radio"
-					name="three70"
-					value="3"
-				>3<input
-					type="radio"
-					name="three70"
-					value="4"
-				>4<input
-					type="radio"
-					name="three70"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>71.感到任何事情都很困难。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three71"
-					value="1"
-				>1<input
-					type="radio"
-					name="three71"
-					value="2"
-				>2<input
-					type="radio"
-					name="three71"
-					value="3"
-				>3<input
-					type="radio"
-					name="three71"
-					value="4"
-				>4<input
-					type="radio"
-					name="three71"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>72.一阵阵恐惧或惊恐。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three72"
-					value="1"
-				>1<input
-					type="radio"
-					name="three72"
-					value="2"
-				>2<input
-					type="radio"
-					name="three72"
-					value="3"
-				>3<input
-					type="radio"
-					name="three72"
-					value="4"
-				>4<input
-					type="radio"
-					name="three72"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>73.感到在公共场合吃东西很不舒服。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three73"
-					value="1"
-				>1<input
-					type="radio"
-					name="three73"
-					value="2"
-				>2<input
-					type="radio"
-					name="three73"
-					value="3"
-				>3<input
-					type="radio"
-					name="three73"
-					value="4"
-				>4<input
-					type="radio"
-					name="three73"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>74.经常与人争论。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three74"
-					value="1"
-				>1<input
-					type="radio"
-					name="three74"
-					value="2"
-				>2<input
-					type="radio"
-					name="three74"
-					value="3"
-				>3<input
-					type="radio"
-					name="three74"
-					value="4"
-				>4<input
-					type="radio"
-					name="three74"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>75.单独一个人时神经很紧张。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three75"
-					value="1"
-				>1<input
-					type="radio"
-					name="three75"
-					value="2"
-				>2<input
-					type="radio"
-					name="three75"
-					value="3"
-				>3<input
-					type="radio"
-					name="three75"
-					value="4"
-				>4<input
-					type="radio"
-					name="three75"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>76.别人对您的成绩没有作出恰当的评价。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three76"
-					value="1"
-				>1<input
-					type="radio"
-					name="three76"
-					value="2"
-				>2<input
-					type="radio"
-					name="three76"
-					value="3"
-				>3<input
-					type="radio"
-					name="three76"
-					value="4"
-				>4<input
-					type="radio"
-					name="three76"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>77.即使和别人在一起也感到孤单。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three77"
-					value="1"
-				>1<input
-					type="radio"
-					name="three77"
-					value="2"
-				>2<input
-					type="radio"
-					name="three77"
-					value="3"
-				>3<input
-					type="radio"
-					name="three77"
-					value="4"
-				>4<input
-					type="radio"
-					name="three77"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>78.感到坐立不安心神不定。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three78"
-					value="1"
-				>1<input
-					type="radio"
-					name="three78"
-					value="2"
-				>2<input
-					type="radio"
-					name="three78"
-					value="3"
-				>3<input
-					type="radio"
-					name="three78"
-					value="4"
-				>4<input
-					type="radio"
-					name="three78"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>79.感到自己没有什么价值。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three79"
-					value="1"
-				>1<input
-					type="radio"
-					name="three79"
-					value="2"
-				>2<input
-					type="radio"
-					name="three79"
-					value="3"
-				>3<input
-					type="radio"
-					name="three79"
-					value="4"
-				>4<input
-					type="radio"
-					name="three79"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>80.感到熟悉的东西变成陌生或不象是真的。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three80"
-					value="1"
-				>1<input
-					type="radio"
-					name="three80"
-					value="2"
-				>2<input
-					type="radio"
-					name="three80"
-					value="3"
-				>3<input
-					type="radio"
-					name="three80"
-					value="4"
-				>4<input
-					type="radio"
-					name="three80"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>81.大叫或摔东西。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three81"
-					value="1"
-				>1<input
-					type="radio"
-					name="three81"
-					value="2"
-				>2<input
-					type="radio"
-					name="three81"
-					value="3"
-				>3<input
-					type="radio"
-					name="three81"
-					value="4"
-				>4<input
-					type="radio"
-					name="three81"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>82.害怕会在公共场合昏倒。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three82"
-					value="1"
-				>1<input
-					type="radio"
-					name="three82"
-					value="2"
-				>2<input
-					type="radio"
-					name="three82"
-					value="3"
-				>3<input
-					type="radio"
-					name="three82"
-					value="4"
-				>4<input
-					type="radio"
-					name="three82"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>83.感到别人想占您的便宜。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three83"
-					value="1"
-				>1<input
-					type="radio"
-					name="three83"
-					value="2"
-				>2<input
-					type="radio"
-					name="three83"
-					value="3"
-				>3<input
-					type="radio"
-					name="three83"
-					value="4"
-				>4<input
-					type="radio"
-					name="three83"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>84.为一些有关性的想法而很苦恼。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three84"
-					value="1"
-				>1<input
-					type="radio"
-					name="three84"
-					value="2"
-				>2<input
-					type="radio"
-					name="three84"
-					value="3"
-				>3<input
-					type="radio"
-					name="three84"
-					value="4"
-				>4<input
-					type="radio"
-					name="three84"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>85.您认为应该因为自己的过错而受到惩罚。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three85"
-					value="1"
-				>1<input
-					type="radio"
-					name="three85"
-					value="2"
-				>2<input
-					type="radio"
-					name="three85"
-					value="3"
-				>3<input
-					type="radio"
-					name="three85"
-					value="4"
-				>4<input
-					type="radio"
-					name="three85"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>86.感到要很快把事情做完。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three86"
-					value="1"
-				>1<input
-					type="radio"
-					name="three86"
-					value="2"
-				>2<input
-					type="radio"
-					name="three86"
-					value="3"
-				>3<input
-					type="radio"
-					name="three86"
-					value="4"
-				>4<input
-					type="radio"
-					name="three86"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>87.感到自己的身体有严重问题。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three87"
-					value="1"
-				>1<input
-					type="radio"
-					name="three87"
-					value="2"
-				>2<input
-					type="radio"
-					name="three87"
-					value="3"
-				>3<input
-					type="radio"
-					name="three87"
-					value="4"
-				>4<input
-					type="radio"
-					name="three87"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>88.从未感到和其他人很亲近。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three88"
-					value="1"
-				>1<input
-					type="radio"
-					name="three88"
-					value="2"
-				>2<input
-					type="radio"
-					name="three88"
-					value="3"
-				>3<input
-					type="radio"
-					name="three88"
-					value="4"
-				>4<input
-					type="radio"
-					name="three88"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>89.感到自己有罪。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three89"
-					value="1"
-				>1<input
-					type="radio"
-					name="three89"
-					value="2"
-				>2<input
-					type="radio"
-					name="three89"
-					value="3"
-				>3<input
-					type="radio"
-					name="three89"
-					value="4"
-				>4<input
-					type="radio"
-					name="three89"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>90.感到自己的脑子有毛病。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="three90"
-					value="1"
-				>1<input
-					type="radio"
-					name="three90"
-					value="2"
-				>2<input
-					type="radio"
-					name="three90"
-					value="3"
-				>3<input
-					type="radio"
-					name="three90"
-					value="4"
-				>4<input
-					type="radio"
-					name="three90"
-					value="5"
-				>5</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: right;"
-					colspan="2"
-				><input
-					type="submit"
-					value="保存"
-				></td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left; color: red;"
-					colspan="2"
-				>本测验题共有20句描述语，请你针对自己的实际情况，判断你对每一句描述语的赞同程度如何,在每一句描述语后面相应的标上字母。其中A表示完全同意，B表示有些同意，C表示无所谓同意或不同意D表示有些不同意，E表示完全不同意。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>1、假如把每次考试的试卷拿到一个安静，无人监考的房间去做，我的成绩会更好一些。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="four1"
-					value="A"
-				>A<input
-					type="radio"
-					name="four1"
-					value="B"
-				>B<input
-					type="radio"
-					name="four1"
-					value="C"
-				>C<input
-					type="radio"
-					name="four1"
-					value="D"
-				>D<input
-					type="radio"
-					name="four1"
-					value="E"
-				>E</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>2、夜间走路，我能比别人看得更清楚。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="four2"
-					value="A"
-				>A<input
-					type="radio"
-					name="four2"
-					value="B"
-				>B<input
-					type="radio"
-					name="four2"
-					value="C"
-				>C<input
-					type="radio"
-					name="four2"
-					value="D"
-				>D<input
-					type="radio"
-					name="four2"
-					value="E"
-				>E</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>3、每次离开家到一个新的地方，我总爱闹点毛病，如失眠、拉肚子、皮肤过敏等。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="four3"
-					value="A"
-				>A<input
-					type="radio"
-					name="four3"
-					value="B"
-				>B<input
-					type="radio"
-					name="four3"
-					value="C"
-				>C<input
-					type="radio"
-					name="four3"
-					value="D"
-				>D<input
-					type="radio"
-					name="four3"
-					value="E"
-				>E</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>4、我在正式运动会上取得的成绩常比体育课或平时练习的成绩好些。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="four4"
-					value="A"
-				>A<input
-					type="radio"
-					name="four4"
-					value="B"
-				>B<input
-					type="radio"
-					name="four4"
-					value="C"
-				>C<input
-					type="radio"
-					name="four4"
-					value="D"
-				>D<input
-					type="radio"
-					name="four4"
-					value="E"
-				>E</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>5、我每次明明已把课文背得滚瓜烂熟了，可是在课堂上背的时候，却总要出点差错。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="four5"
-					value="A"
-				>A<input
-					type="radio"
-					name="four5"
-					value="B"
-				>B<input
-					type="radio"
-					name="four5"
-					value="C"
-				>C<input
-					type="radio"
-					name="four5"
-					value="D"
-				>D<input
-					type="radio"
-					name="four5"
-					value="E"
-				>E</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>6、开会轮到我发言时，我似乎比别人更镇定，发言也显得很自然。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="four6"
-					value="A"
-				>A<input
-					type="radio"
-					name="four6"
-					value="B"
-				>B<input
-					type="radio"
-					name="four6"
-					value="C"
-				>C<input
-					type="radio"
-					name="four6"
-					value="D"
-				>D<input
-					type="radio"
-					name="four6"
-					value="E"
-				>E</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>7、在冷天我比别人更怕冷，热天比别人更怕热。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="four7"
-					value="A"
-				>A<input
-					type="radio"
-					name="four7"
-					value="B"
-				>B<input
-					type="radio"
-					name="four7"
-					value="C"
-				>C<input
-					type="radio"
-					name="four7"
-					value="D"
-				>D<input
-					type="radio"
-					name="four7"
-					value="E"
-				>E</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>8、在嘈杂、混乱的环境里，我仍能集中精力学习、工作，效率并不大幅降低。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="four8"
-					value="A"
-				>A<input
-					type="radio"
-					name="four8"
-					value="B"
-				>B<input
-					type="radio"
-					name="four8"
-					value="C"
-				>C<input
-					type="radio"
-					name="four8"
-					value="D"
-				>D<input
-					type="radio"
-					name="four8"
-					value="E"
-				>E</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>9、每次检查身体,医生都说我“心跳过快”,其实平时脉搏很正常。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="four9"
-					value="A"
-				>A<input
-					type="radio"
-					name="four9"
-					value="B"
-				>B<input
-					type="radio"
-					name="four9"
-					value="C"
-				>C<input
-					type="radio"
-					name="four9"
-					value="D"
-				>D<input
-					type="radio"
-					name="four9"
-					value="E"
-				>E</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>10、如果需要的话,我可以熬一个通宵,精力充沛地学习或工作。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="four10"
-					value="A"
-				>A<input
-					type="radio"
-					name="four10"
-					value="B"
-				>B<input
-					type="radio"
-					name="four10"
-					value="C"
-				>C<input
-					type="radio"
-					name="four10"
-					value="D"
-				>D<input
-					type="radio"
-					name="four10"
-					value="E"
-				>E</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>11、当父母或兄弟姐妹的朋友来我家做客的时候,我尽量回避他们。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="four11"
-					value="A"
-				>A<input
-					type="radio"
-					name="four11"
-					value="B"
-				>B<input
-					type="radio"
-					name="four11"
-					value="C"
-				>C<input
-					type="radio"
-					name="four11"
-					value="D"
-				>D<input
-					type="radio"
-					name="four11"
-					value="E"
-				>E</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>12、出门在外,虽然吃饭、睡觉、环境等变化很大,可是我很快就能习惯。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="four12"
-					value="A"
-				>A<input
-					type="radio"
-					name="four12"
-					value="B"
-				>B<input
-					type="radio"
-					name="four12"
-					value="C"
-				>C<input
-					type="radio"
-					name="four12"
-					value="D"
-				>D<input
-					type="radio"
-					name="four12"
-					value="E"
-				>E</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>13、参加各种比赛时,赛场上越热烈,同学越加油,我的成绩反而越上不去。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="four13"
-					value="A"
-				>A<input
-					type="radio"
-					name="four13"
-					value="B"
-				>B<input
-					type="radio"
-					name="four13"
-					value="C"
-				>C<input
-					type="radio"
-					name="four13"
-					value="D"
-				>D<input
-					type="radio"
-					name="four13"
-					value="E"
-				>E</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>14、上课回答问题或开会发言时,我能镇定自若地把事先想好的一切都完整地说出来。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="four14"
-					value="A"
-				>A<input
-					type="radio"
-					name="four14"
-					value="B"
-				>B<input
-					type="radio"
-					name="four14"
-					value="C"
-				>C<input
-					type="radio"
-					name="four14"
-					value="D"
-				>D<input
-					type="radio"
-					name="four14"
-					value="E"
-				>E</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>15、我觉得一个人做事比大家一起干效率高些,所以我愿意一个人做事。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="four15"
-					value="A"
-				>A<input
-					type="radio"
-					name="four15"
-					value="B"
-				>B<input
-					type="radio"
-					name="four15"
-					value="C"
-				>C<input
-					type="radio"
-					name="four15"
-					value="D"
-				>D<input
-					type="radio"
-					name="four15"
-					value="E"
-				>E</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>16、为求得和睦相处,我有时放弃自己的意见,附和大家。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="four16"
-					value="A"
-				>A<input
-					type="radio"
-					name="four16"
-					value="B"
-				>B<input
-					type="radio"
-					name="four16"
-					value="C"
-				>C<input
-					type="radio"
-					name="four16"
-					value="D"
-				>D<input
-					type="radio"
-					name="four16"
-					value="E"
-				>E</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>17、当着众人和生人的面,我感到窘迫。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="four17"
-					value="A"
-				>A<input
-					type="radio"
-					name="four17"
-					value="B"
-				>B<input
-					type="radio"
-					name="four17"
-					value="C"
-				>C<input
-					type="radio"
-					name="four17"
-					value="D"
-				>D<input
-					type="radio"
-					name="four17"
-					value="E"
-				>E</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>18、无论情况多么紧迫,我都能注意到该注意的细节,不爱丢三落四。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="four18"
-					value="A"
-				>A<input
-					type="radio"
-					name="four18"
-					value="B"
-				>B<input
-					type="radio"
-					name="four18"
-					value="C"
-				>C<input
-					type="radio"
-					name="four18"
-					value="D"
-				>D<input
-					type="radio"
-					name="four18"
-					value="E"
-				>E</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>19、和别人争吵起来时,我常常哑口无言,事后才想起来该怎样反驳对方,可是已经晚了。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="four19"
-					value="A"
-				>A<input
-					type="radio"
-					name="four19"
-					value="B"
-				>B<input
-					type="radio"
-					name="four19"
-					value="C"
-				>C<input
-					type="radio"
-					name="four19"
-					value="D"
-				>D<input
-					type="radio"
-					name="four19"
-					value="E"
-				>E</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				>20、我每次参加正式考试或考核的成绩,常常比平时的成绩更好些。</td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: left;"
-					colspan="2"
-				><input
-					type="radio"
-					name="four20"
-					value="A"
-				>A<input
-					type="radio"
-					name="four20"
-					value="B"
-				>B<input
-					type="radio"
-					name="four20"
-					value="C"
-				>C<input
-					type="radio"
-					name="four20"
-					value="D"
-				>D<input
-					type="radio"
-					name="four20"
-					value="E"
-				>E</td>
-			</tr>
-			<tr>
-				<td
-					style='text-align: right;'
-					colspan='2'
-				><input
-					type='submit'
-					value='保存'
-				></td>
-			</tr>
-			<tr id="imgStartBefore">
-				<td
-					style="text-align: left; color: red;"
-					colspan="2"
-				>手术前后照片 改善度0~9评分</td>
-			</tr>
-			<!-- 横 -->
-			<tr style='border-top: 1px solid'>
-				<td>横.</td>
-				<td></td>
-			</tr>
-			<tr style="height: 400px;">
-				<td>
-					<div
-						id="hengDiv"
-						style="width: 60px; height: 1px; background-color: black; overflow: hidden; margin: auto;"
-					>
-						<input
-							type="text"
-							name="hengB"
-							id="hengB"
-							style="visibility: hidden;"
-						> <input
-							type="text"
-							name="hengL"
-							id="hengL"
-							style="visibility: hidden;"
-						>
-					</div>
-				</td>
-				<td>
-					<div
-						id="heng"
-						style="width: 60px; height: 1px; background-color: black; overflow: hidden; margin: auto;"
-					></div>
-				</td>
-			</tr>
+            <tr>
+                <td style="text-align: left; color: red" colspan="2">指导语：以下列出了有些人可能会有的问题，请仔细地阅读每一条， 然后根据最近一星期以内下述情况影响您的实际感觉，选择“是”或“否”</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">1.你是否有许多不同的业余爱好？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two1" value="1">是<input type="radio" name="two1" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">2.你是否在做任何事情以前都要停下来仔细思考？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two2" value="1">是<input type="radio" name="two2" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">3.你的心境是否常有起伏？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two3" value="1">是<input type="radio" name="two3" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">4.你曾有过明知是别人的功劳而你去接受奖励的事吗？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two4" value="1">是<input type="radio" name="two4" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">5.你是否健谈？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two5" value="1">是<input type="radio" name="two5" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">6.欠债会使你不安吗？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two6" value="1">是<input type="radio" name="two6" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">7.你曾无缘无故觉得“真是难受”吗？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two7" value="1">是<input type="radio" name="two7" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">8.你曾贪图过份外之物吗？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two8" value="1">是<input type="radio" name="two8" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">9.你是否在晚上小心翼翼地关好门窗？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two9" value="1">是<input type="radio" name="two9" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">10.你是否比较活跃？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two10" value="1">是<input type="radio" name="two10" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">11.你在见到一小孩或一动物受折磨时是否会感到非常难过？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two11" value="1">是<input type="radio" name="two11" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">12.你常常为自己不该做而做了的事，不该说而说了的话而紧张？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two12" value="1">是<input type="radio" name="two12" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">13.你喜欢跳降落伞吗？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two13" value="1">是<input type="radio" name="two13" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">14.通常你能在热闹联欢会中尽情地玩吗？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two14" value="1">是<input type="radio" name="two14" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">15.你容易激动吗？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two15" value="1">是<input type="radio" name="two15" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">16.你曾经将自己的过错推给别人吗？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two16" value="1">是<input type="radio" name="two16" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">17.你喜欢会见陌生人吗？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two17" value="1">是<input type="radio" name="two17" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">18.你是否相信保险制度是一种好办法？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two18" value="1">是<input type="radio" name="two18" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">19.你是一个容易伤感情的人吗？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two19" value="1">是<input type="radio" name="two19" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">20.你所有的习惯都是好的吗？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two20" value="1">是<input type="radio" name="two20" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">21.在社交场合你是否总不愿露面？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two21" value="1">是<input type="radio" name="two21" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">22.你会服用奇异或危险作用的药物吗？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two22" value="1">是<input type="radio" name="two22" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">23.你常有“厌倦”的感觉吗？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two23" value="1">是<input type="radio" name="two23" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">24.你曾拿过别人的东西吗（哪怕一针一线）？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two24" value="1">是<input type="radio" name="two24" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">25.你是否常爱外出？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two25" value="1">是<input type="radio" name="two25" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">26.你是否从伤害你所宠爱的人而感到乐趣？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two26" value="1">是<input type="radio" name="two26" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">27.你常为有罪恶之感所苦恼吗？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two27" value="1">是<input type="radio" name="two27" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">28.你在谈论中是否有时不懂装懂？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two28" value="1">是<input type="radio" name="two28" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">29.你是否宁愿去看书也不愿去多见人？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two29" value="1">是<input type="radio" name="two29" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">30.你有要伤害你的仇人吗？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two30" value="1">是<input type="radio" name="two30" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">31.你觉得自己是一个神经过敏的人吗？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two31" value="1">是<input type="radio" name="two31" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">32.对人有所失礼时你是否经常要表示歉意？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two32" value="1">是<input type="radio" name="two32" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">33.你有许多朋友吗？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two33" value="1">是<input type="radio" name="two33" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">34.你是否喜爱讲些有时确能伤害人的笑话？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two34" value="1">是<input type="radio" name="two34" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">35.你是一个多忧多虑的人吗？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two35" value="1">是<input type="radio" name="two35" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">36.你在童年是否按照吩咐要做什么便做什么，毫无怨言？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two36" value="1">是<input type="radio" name="two36" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">37.你认为你是一个乐天派吗？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two37" value="1">是<input type="radio" name="two37" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">38.你很讲究礼貌和整洁吗？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two38" value="1">是<input type="radio" name="two38" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">39.你是否总在担心会发生可怕的事情？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two39" value="1">是<input type="radio" name="two39" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">40.你曾损坏或遗失过别人的东西吗？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two40" value="1">是<input type="radio" name="two40" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">41.交新朋友时一般是你采取主动吗？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two41" value="1">是<input type="radio" name="two41" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">42.当别人向你诉苦时，你是否容易理解他们的苦衷？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two42" value="1">是<input type="radio" name="two42" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">43.你认为自己很紧张，如同“拉紧的弦”一样吗？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two43" value="1">是<input type="radio" name="two43" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">44.在没有废纸篓时，你是否将废纸扔在地板上？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two44" value="1">是<input type="radio" name="two44" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">45.当你与别人在一起时，你是否言语很少？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two45" value="1">是<input type="radio" name="two45" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">46.你是否认为结婚制度过时了，应废止？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two46" value="1">是<input type="radio" name="two46" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">47.你是否有时感到自己可怜？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two47" value="1">是<input type="radio" name="two47" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">48.你是否有时有点自夸？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two48" value="1">是<input type="radio" name="two48" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">49.你是否很容易将一个沉寂的集会弄得活跃起来？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two49" value="1">是<input type="radio" name="two49" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">50.你是否讨厌那种小心翼翼开车的人？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two50" value="1">是<input type="radio" name="two50" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">51.你为你的健康担忧吗？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two51" value="1">是<input type="radio" name="two51" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">52.你曾讲过什么人的坏话吗？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two52" value="1">是<input type="radio" name="two52" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">53.你是否喜欢对朋友讲笑话和有趣的故事？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two53" value="1">是<input type="radio" name="two53" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">54.你小时候曾对父母粗暴无礼吗？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two54" value="1">是<input type="radio" name="two54" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">55.你是否喜欢与人混在一起？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two55" value="1">是<input type="radio" name="two55" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">56.你如知道自己工作有错误，这会使你感到难过吗？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two56" value="1">是<input type="radio" name="two56" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">57.你患失眠吗？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two57" value="1">是<input type="radio" name="two57" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">58.你吃饭前必定洗手吗？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two58" value="1">是<input type="radio" name="two58" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">59.你常无缘无故感到无精打采和倦怠吗？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two59" value="1">是<input type="radio" name="two59" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">60.和别人玩游戏时，有过欺骗行为吗？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two60" value="1">是<input type="radio" name="two60" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">61.你是否喜欢从事一些动作迅速的工作？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two61" value="1">是<input type="radio" name="two61" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">62.你的母亲是一位善良的妇人吗？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two62" value="1">是<input type="radio" name="two62" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">63.你是否常常觉得人生非常无味？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two63" value="1">是<input type="radio" name="two63" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">64.你曾利用过某人为自己取得好处吗？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two64" value="1">是<input type="radio" name="two64" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">65.你是否常常参加许多活动，超过你的时间所允许？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two65" value="1">是<input type="radio" name="two65" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">66.是否有几个人总在躲避你？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two66" value="1">是<input type="radio" name="two66" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">67.你是否为你的容貌而很烦恼？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two67" value="1">是<input type="radio" name="two67" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">68.你是否觉得人们为了未来有保障而办理储蓄和保险所花的时间太多？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two68" value="1">是<input type="radio" name="two68" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">69.你曾有过不如死了好的想法吗？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two69" value="1">是<input type="radio" name="two69" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">70.如果有把握永远不会被别人发现，你会逃税吗？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two70" value="1">是<input type="radio" name="two70" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">71.你能使一个集会顺利进行吗？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two71" value="1">是<input type="radio" name="two71" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">72.你能克制自己不对人无礼吗？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two72" value="1">是<input type="radio" name="two72" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">73.遇到一次难堪的经历后，你是否在一段很长时间内还感到难过？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two73" value="1">是<input type="radio" name="two73" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">74.你患有神经过敏吗？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two74" value="1">是<input type="radio" name="two74" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">75.你曾经故意说些什么来伤害别人的感情吗？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two75" value="1">是<input type="radio" name="two75" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">76.你与别人的友谊是否容易破裂，虽然不是你的过错?</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two76" value="1">是<input type="radio" name="two76" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">77.你常感到孤独吗？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two77" value="1">是<input type="radio" name="two77" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">78 当人家寻你的差错，挑你工作中的缺点时，你是否容易精神上受挫？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two78" value="1">是<input type="radio" name="two78" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">79.你赴约或上班迟到过吗？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two79" value="1">是<input type="radio" name="two79" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">80.你喜欢忙忙碌碌的过日子吗？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two80" value="1">是<input type="radio" name="two80" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">81.你愿意别人怕你吗？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two81" value="1">是<input type="radio" name="two81" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">82.你是否觉得有时浑身是劲，有时却懒洋洋的？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two82" value="1">是<input type="radio" name="two82" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">83.你有时把今天的事拖到明天去做吗？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two83" value="1">是<input type="radio" name="two83" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">84.别人会认为你是生气勃勃吗？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two84" value="1">是<input type="radio" name="two84" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">85.别人是否对你说了很多谎话？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two85" value="1">是<input type="radio" name="two85" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">86.你是否容易对某些事情冒火？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two86" value="1">是<input type="radio" name="two86" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">87.当你犯了错误时，你是否常常愿意承认它？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two87" value="1">是<input type="radio" name="two87" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">88.你会为一动物落入圈套而被捉住时而感到难过吗？</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="two88" value="1">是<input type="radio" name="two88" value="2">否</td>
+            </tr>
+            <tr>
+                <td style="text-align: right;" colspan="2"><input type="submit" value="保存"></td>
+            </tr>
+            <tr>
+                <td style="text-align: left; color: red" colspan="2">指导语：以下列出了有些人可能会有的问题，请仔细地阅读每一条，然 后根据最近一星期以内下述情况影响您的实际感觉，在每个问题后标明该题 的程度得分。其中，“没有”选 1，“很轻”选 2，“中等”选 3， “偏重” 选 4，“严重”选 5。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">1.头痛。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three1" value="1">1<input type="radio" name="three1" value="2">2<input type="radio" name="three1" value="3">3<input type="radio" name="three1" value="4">4<input type="radio" name="three1" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">2.神经过敏，心中不踏实。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three2" value="1">1<input type="radio" name="three2" value="2">2<input type="radio" name="three2" value="3">3<input type="radio" name="three2" value="4">4<input type="radio" name="three2" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">3.头脑中有不必要的想法或字句盘旋。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three3" value="1">1<input type="radio" name="three3" value="2">2<input type="radio" name="three3" value="3">3<input type="radio" name="three3" value="4">4<input type="radio" name="three3" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">4.头昏或昏倒。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three4" value="1">1<input type="radio" name="three4" value="2">2<input type="radio" name="three4" value="3">3<input type="radio" name="three4" value="4">4<input type="radio" name="three4" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">5.对异性的兴趣减退。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three5" value="1">1<input type="radio" name="three5" value="2">2<input type="radio" name="three5" value="3">3<input type="radio" name="three5" value="4">4<input type="radio" name="three5" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">6.对旁人责备求全。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three6" value="1">1<input type="radio" name="three6" value="2">2<input type="radio" name="three6" value="3">3<input type="radio" name="three6" value="4">4<input type="radio" name="three6" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">7.感到别人能控制您的思想。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three7" value="1">1<input type="radio" name="three7" value="2">2<input type="radio" name="three7" value="3">3<input type="radio" name="three7" value="4">4<input type="radio" name="three7" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">8.责怪别人制造麻烦。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three8" value="1">1<input type="radio" name="three8" value="2">2<input type="radio" name="three8" value="3">3<input type="radio" name="three8" value="4">4<input type="radio" name="three8" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">9.忘记性大。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three9" value="1">1<input type="radio" name="three9" value="2">2<input type="radio" name="three9" value="3">3<input type="radio" name="three9" value="4">4<input type="radio" name="three9" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">10.担心自己的衣饰整齐及仪态的端正。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three10" value="1">1<input type="radio" name="three10" value="2">2<input type="radio" name="three10" value="3">3<input type="radio" name="three10" value="4">4<input type="radio" name="three10" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">11.容易烦恼和激动。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three11" value="1">1<input type="radio" name="three11" value="2">2<input type="radio" name="three11" value="3">3<input type="radio" name="three11" value="4">4<input type="radio" name="three11" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">12.胸痛。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three12" value="1">1<input type="radio" name="three12" value="2">2<input type="radio" name="three12" value="3">3<input type="radio" name="three12" value="4">4<input type="radio" name="three12" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">13.害怕空旷的场所或街道。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three13" value="1">1<input type="radio" name="three13" value="2">2<input type="radio" name="three13" value="3">3<input type="radio" name="three13" value="4">4<input type="radio" name="three13" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">14.感到自己的精力下降，活动减慢。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three14" value="1">1<input type="radio" name="three14" value="2">2<input type="radio" name="three14" value="3">3<input type="radio" name="three14" value="4">4<input type="radio" name="three14" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">15.想结束自己的生命。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three15" value="1">1<input type="radio" name="three15" value="2">2<input type="radio" name="three15" value="3">3<input type="radio" name="three15" value="4">4<input type="radio" name="three15" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">16.听到旁人听不到的声音。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three16" value="1">1<input type="radio" name="three16" value="2">2<input type="radio" name="three16" value="3">3<input type="radio" name="three16" value="4">4<input type="radio" name="three16" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">17.发抖。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three17" value="1">1<input type="radio" name="three17" value="2">2<input type="radio" name="three17" value="3">3<input type="radio" name="three17" value="4">4<input type="radio" name="three17" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">18.感到大多数人都不可信任。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three18" value="1">1<input type="radio" name="three18" value="2">2<input type="radio" name="three18" value="3">3<input type="radio" name="three18" value="4">4<input type="radio" name="three18" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">19.胃口不好。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three19" value="1">1<input type="radio" name="three19" value="2">2<input type="radio" name="three19" value="3">3<input type="radio" name="three19" value="4">4<input type="radio" name="three19" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">20.容易哭泣。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three20" value="1">1<input type="radio" name="three20" value="2">2<input type="radio" name="three20" value="3">3<input type="radio" name="three20" value="4">4<input type="radio" name="three20" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">21.同异性相处时感到害羞不自在。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three21" value="1">1<input type="radio" name="three21" value="2">2<input type="radio" name="three21" value="3">3<input type="radio" name="three21" value="4">4<input type="radio" name="three21" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">22.感到受骗，中了圈套或有人想抓住您。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three22" value="1">1<input type="radio" name="three22" value="2">2<input type="radio" name="three22" value="3">3<input type="radio" name="three22" value="4">4<input type="radio" name="three22" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">23.无缘无故地突然感到害怕。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three23" value="1">1<input type="radio" name="three23" value="2">2<input type="radio" name="three23" value="3">3<input type="radio" name="three23" value="4">4<input type="radio" name="three23" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">24.自己不能控制地大发脾气。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three24" value="1">1<input type="radio" name="three24" value="2">2<input type="radio" name="three24" value="3">3<input type="radio" name="three24" value="4">4<input type="radio" name="three24" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">25.怕单独出门。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three25" value="1">1<input type="radio" name="three25" value="2">2<input type="radio" name="three25" value="3">3<input type="radio" name="three25" value="4">4<input type="radio" name="three25" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">26.经常责怪自己。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three26" value="1">1<input type="radio" name="three26" value="2">2<input type="radio" name="three26" value="3">3<input type="radio" name="three26" value="4">4<input type="radio" name="three26" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">27.腰痛。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three27" value="1">1<input type="radio" name="three27" value="2">2<input type="radio" name="three27" value="3">3<input type="radio" name="three27" value="4">4<input type="radio" name="three27" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">28.感到难以完成任务。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three28" value="1">1<input type="radio" name="three28" value="2">2<input type="radio" name="three28" value="3">3<input type="radio" name="three28" value="4">4<input type="radio" name="three28" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">29.感到孤独。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three29" value="1">1<input type="radio" name="three29" value="2">2<input type="radio" name="three29" value="3">3<input type="radio" name="three29" value="4">4<input type="radio" name="three29" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">30.感到苦闷。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three30" value="1">1<input type="radio" name="three30" value="2">2<input type="radio" name="three30" value="3">3<input type="radio" name="three30" value="4">4<input type="radio" name="three30" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">31.过分担忧。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three31" value="1">1<input type="radio" name="three31" value="2">2<input type="radio" name="three31" value="3">3<input type="radio" name="three31" value="4">4<input type="radio" name="three31" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">32.对事物不感兴趣。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three32" value="1">1<input type="radio" name="three32" value="2">2<input type="radio" name="three32" value="3">3<input type="radio" name="three32" value="4">4<input type="radio" name="three32" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">33.感到害怕。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three33" value="1">1<input type="radio" name="three33" value="2">2<input type="radio" name="three33" value="3">3<input type="radio" name="three33" value="4">4<input type="radio" name="three33" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">34.您的感情容易受到伤害。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three34" value="1">1<input type="radio" name="three34" value="2">2<input type="radio" name="three34" value="3">3<input type="radio" name="three34" value="4">4<input type="radio" name="three34" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">35.旁人能知道您的私下想法。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three35" value="1">1<input type="radio" name="three35" value="2">2<input type="radio" name="three35" value="3">3<input type="radio" name="three35" value="4">4<input type="radio" name="three35" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">36.感到别人不理解您、不同情您。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three36" value="1">1<input type="radio" name="three36" value="2">2<input type="radio" name="three36" value="3">3<input type="radio" name="three36" value="4">4<input type="radio" name="three36" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">37.感到人们对您不友好，不喜欢您。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three37" value="1">1<input type="radio" name="three37" value="2">2<input type="radio" name="three37" value="3">3<input type="radio" name="three37" value="4">4<input type="radio" name="three37" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">38.做事必须做得很慢以保证做得正确。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three38" value="1">1<input type="radio" name="three38" value="2">2<input type="radio" name="three38" value="3">3<input type="radio" name="three38" value="4">4<input type="radio" name="three38" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">39.心跳得很厉害。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three39" value="1">1<input type="radio" name="three39" value="2">2<input type="radio" name="three39" value="3">3<input type="radio" name="three39" value="4">4<input type="radio" name="three39" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">40.恶心或胃部不舒服。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three40" value="1">1<input type="radio" name="three40" value="2">2<input type="radio" name="three40" value="3">3<input type="radio" name="three40" value="4">4<input type="radio" name="three40" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">41.感到比不上他人。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three41" value="1">1<input type="radio" name="three41" value="2">2<input type="radio" name="three41" value="3">3<input type="radio" name="three41" value="4">4<input type="radio" name="three41" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">42.肌肉酸痛。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three42" value="1">1<input type="radio" name="three42" value="2">2<input type="radio" name="three42" value="3">3<input type="radio" name="three42" value="4">4<input type="radio" name="three42" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">43.感到有人在监视您、谈论您。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three43" value="1">1<input type="radio" name="three43" value="2">2<input type="radio" name="three43" value="3">3<input type="radio" name="three43" value="4">4<input type="radio" name="three43" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">44.难以入睡。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three44" value="1">1<input type="radio" name="three44" value="2">2<input type="radio" name="three44" value="3">3<input type="radio" name="three44" value="4">4<input type="radio" name="three44" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">45.做事必须反复检查。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three45" value="1">1<input type="radio" name="three45" value="2">2<input type="radio" name="three45" value="3">3<input type="radio" name="three45" value="4">4<input type="radio" name="three45" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">46.难以作出决定。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three46" value="1">1<input type="radio" name="three46" value="2">2<input type="radio" name="three46" value="3">3<input type="radio" name="three46" value="4">4<input type="radio" name="three46" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">47.怕乘电车、公共汽车、地铁或火车。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three47" value="1">1<input type="radio" name="three47" value="2">2<input type="radio" name="three47" value="3">3<input type="radio" name="three47" value="4">4<input type="radio" name="three47" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">48.呼吸有困难。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three48" value="1">1<input type="radio" name="three48" value="2">2<input type="radio" name="three48" value="3">3<input type="radio" name="three48" value="4">4<input type="radio" name="three48" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">49.一阵阵发冷或发热。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three49" value="1">1<input type="radio" name="three49" value="2">2<input type="radio" name="three49" value="3">3<input type="radio" name="three49" value="4">4<input type="radio" name="three49" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">50.因为感到害怕而避开某些东西、场合或活动。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three50" value="1">1<input type="radio" name="three50" value="2">2<input type="radio" name="three50" value="3">3<input type="radio" name="three50" value="4">4<input type="radio" name="three50" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">51.脑子变空了。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three51" value="1">1<input type="radio" name="three51" value="2">2<input type="radio" name="three51" value="3">3<input type="radio" name="three51" value="4">4<input type="radio" name="three51" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">52.身体发麻或刺痛。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three52" value="1">1<input type="radio" name="three52" value="2">2<input type="radio" name="three52" value="3">3<input type="radio" name="three52" value="4">4<input type="radio" name="three52" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">53.喉咙有梗塞感。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three53" value="1">1<input type="radio" name="three53" value="2">2<input type="radio" name="three53" value="3">3<input type="radio" name="three53" value="4">4<input type="radio" name="three53" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">54.感到前途没有希望。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three54" value="1">1<input type="radio" name="three54" value="2">2<input type="radio" name="three54" value="3">3<input type="radio" name="three54" value="4">4<input type="radio" name="three54" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">55.不能集中注意。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three55" value="1">1<input type="radio" name="three55" value="2">2<input type="radio" name="three55" value="3">3<input type="radio" name="three55" value="4">4<input type="radio" name="three55" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">56.感到身体的某一部分软弱无力。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three56" value="1">1<input type="radio" name="three56" value="2">2<input type="radio" name="three56" value="3">3<input type="radio" name="three56" value="4">4<input type="radio" name="three56" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">57.感到紧张或容易紧张。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three57" value="1">1<input type="radio" name="three57" value="2">2<input type="radio" name="three57" value="3">3<input type="radio" name="three57" value="4">4<input type="radio" name="three57" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">58.感到手或脚发重。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three58" value="1">1<input type="radio" name="three58" value="2">2<input type="radio" name="three58" value="3">3<input type="radio" name="three58" value="4">4<input type="radio" name="three58" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">59.想到死亡的事。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three59" value="1">1<input type="radio" name="three59" value="2">2<input type="radio" name="three59" value="3">3<input type="radio" name="three59" value="4">4<input type="radio" name="three59" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">60.吃得太多。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three60" value="1">1<input type="radio" name="three60" value="2">2<input type="radio" name="three60" value="3">3<input type="radio" name="three60" value="4">4<input type="radio" name="three60" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">61.当别人看着您或谈论您时感到不自在。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three61" value="1">1<input type="radio" name="three61" value="2">2<input type="radio" name="three61" value="3">3<input type="radio" name="three61" value="4">4<input type="radio" name="three61" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">62.有一些不属于您自己的想法。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three62" value="1">1<input type="radio" name="three62" value="2">2<input type="radio" name="three62" value="3">3<input type="radio" name="three62" value="4">4<input type="radio" name="three62" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">63.有想打人或伤害他人的冲动。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three63" value="1">1<input type="radio" name="three63" value="2">2<input type="radio" name="three63" value="3">3<input type="radio" name="three63" value="4">4<input type="radio" name="three63" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">64.醒得太早。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three64" value="1">1<input type="radio" name="three64" value="2">2<input type="radio" name="three64" value="3">3<input type="radio" name="three64" value="4">4<input type="radio" name="three64" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">65.必须反复洗手、点数目或触摸某些东西。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three65" value="1">1<input type="radio" name="three65" value="2">2<input type="radio" name="three65" value="3">3<input type="radio" name="three65" value="4">4<input type="radio" name="three65" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">66.睡得不稳不深。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three66" value="1">1<input type="radio" name="three66" value="2">2<input type="radio" name="three66" value="3">3<input type="radio" name="three66" value="4">4<input type="radio" name="three66" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">67.有想摔坏或破坏东西的冲动。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three67" value="1">1<input type="radio" name="three67" value="2">2<input type="radio" name="three67" value="3">3<input type="radio" name="three67" value="4">4<input type="radio" name="three67" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">68.有一些别人没有的想法或念头。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three68" value="1">1<input type="radio" name="three68" value="2">2<input type="radio" name="three68" value="3">3<input type="radio" name="three68" value="4">4<input type="radio" name="three68" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">69.感到对别人神经过敏。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three69" value="1">1<input type="radio" name="three69" value="2">2<input type="radio" name="three69" value="3">3<input type="radio" name="three69" value="4">4<input type="radio" name="three69" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">70.在商店或电影院等人多的地方感到不自在。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three70" value="1">1<input type="radio" name="three70" value="2">2<input type="radio" name="three70" value="3">3<input type="radio" name="three70" value="4">4<input type="radio" name="three70" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">71.感到任何事情都很困难。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three71" value="1">1<input type="radio" name="three71" value="2">2<input type="radio" name="three71" value="3">3<input type="radio" name="three71" value="4">4<input type="radio" name="three71" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">72.一阵阵恐惧或惊恐。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three72" value="1">1<input type="radio" name="three72" value="2">2<input type="radio" name="three72" value="3">3<input type="radio" name="three72" value="4">4<input type="radio" name="three72" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">73.感到在公共场合吃东西很不舒服。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three73" value="1">1<input type="radio" name="three73" value="2">2<input type="radio" name="three73" value="3">3<input type="radio" name="three73" value="4">4<input type="radio" name="three73" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">74.经常与人争论。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three74" value="1">1<input type="radio" name="three74" value="2">2<input type="radio" name="three74" value="3">3<input type="radio" name="three74" value="4">4<input type="radio" name="three74" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">75.单独一个人时神经很紧张。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three75" value="1">1<input type="radio" name="three75" value="2">2<input type="radio" name="three75" value="3">3<input type="radio" name="three75" value="4">4<input type="radio" name="three75" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">76.别人对您的成绩没有作出恰当的评价。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three76" value="1">1<input type="radio" name="three76" value="2">2<input type="radio" name="three76" value="3">3<input type="radio" name="three76" value="4">4<input type="radio" name="three76" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">77.即使和别人在一起也感到孤单。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three77" value="1">1<input type="radio" name="three77" value="2">2<input type="radio" name="three77" value="3">3<input type="radio" name="three77" value="4">4<input type="radio" name="three77" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">78.感到坐立不安心神不定。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three78" value="1">1<input type="radio" name="three78" value="2">2<input type="radio" name="three78" value="3">3<input type="radio" name="three78" value="4">4<input type="radio" name="three78" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">79.感到自己没有什么价值。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three79" value="1">1<input type="radio" name="three79" value="2">2<input type="radio" name="three79" value="3">3<input type="radio" name="three79" value="4">4<input type="radio" name="three79" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">80.感到熟悉的东西变成陌生或不象是真的。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three80" value="1">1<input type="radio" name="three80" value="2">2<input type="radio" name="three80" value="3">3<input type="radio" name="three80" value="4">4<input type="radio" name="three80" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">81.大叫或摔东西。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three81" value="1">1<input type="radio" name="three81" value="2">2<input type="radio" name="three81" value="3">3<input type="radio" name="three81" value="4">4<input type="radio" name="three81" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">82.害怕会在公共场合昏倒。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three82" value="1">1<input type="radio" name="three82" value="2">2<input type="radio" name="three82" value="3">3<input type="radio" name="three82" value="4">4<input type="radio" name="three82" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">83.感到别人想占您的便宜。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three83" value="1">1<input type="radio" name="three83" value="2">2<input type="radio" name="three83" value="3">3<input type="radio" name="three83" value="4">4<input type="radio" name="three83" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">84.为一些有关性的想法而很苦恼。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three84" value="1">1<input type="radio" name="three84" value="2">2<input type="radio" name="three84" value="3">3<input type="radio" name="three84" value="4">4<input type="radio" name="three84" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">85.您认为应该因为自己的过错而受到惩罚。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three85" value="1">1<input type="radio" name="three85" value="2">2<input type="radio" name="three85" value="3">3<input type="radio" name="three85" value="4">4<input type="radio" name="three85" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">86.感到要很快把事情做完。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three86" value="1">1<input type="radio" name="three86" value="2">2<input type="radio" name="three86" value="3">3<input type="radio" name="three86" value="4">4<input type="radio" name="three86" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">87.感到自己的身体有严重问题。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three87" value="1">1<input type="radio" name="three87" value="2">2<input type="radio" name="three87" value="3">3<input type="radio" name="three87" value="4">4<input type="radio" name="three87" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">88.从未感到和其他人很亲近。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three88" value="1">1<input type="radio" name="three88" value="2">2<input type="radio" name="three88" value="3">3<input type="radio" name="three88" value="4">4<input type="radio" name="three88" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">89.感到自己有罪。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three89" value="1">1<input type="radio" name="three89" value="2">2<input type="radio" name="three89" value="3">3<input type="radio" name="three89" value="4">4<input type="radio" name="three89" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">90.感到自己的脑子有毛病。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="three90" value="1">1<input type="radio" name="three90" value="2">2<input type="radio" name="three90" value="3">3<input type="radio" name="three90" value="4">4<input type="radio" name="three90" value="5">5</td>
+            </tr>
+            <tr>
+                <td style="text-align: right;" colspan="2"><input type="submit" value="保存"></td>
+            </tr>
+            <tr>
+                <td style="text-align: left; color: red;" colspan="2">本测验题共有20句描述语，请你针对自己的实际情况，判断你对每一句描述语的赞同程度如何,在每一句描述语后面相应的标上字母。其中A表示完全同意，B表示有些同意，C表示无所谓同意或不同意D表示有些不同意，E表示完全不同意。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">1、假如把每次考试的试卷拿到一个安静，无人监考的房间去做，我的成绩会更好一些。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="four1" value="A">A<input type="radio" name="four1" value="B">B<input type="radio" name="four1" value="C">C<input type="radio" name="four1" value="D">D<input type="radio" name="four1" value="E">E</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">2、夜间走路，我能比别人看得更清楚。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="four2" value="A">A<input type="radio" name="four2" value="B">B<input type="radio" name="four2" value="C">C<input type="radio" name="four2" value="D">D<input type="radio" name="four2" value="E">E</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">3、每次离开家到一个新的地方，我总爱闹点毛病，如失眠、拉肚子、皮肤过敏等。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="four3" value="A">A<input type="radio" name="four3" value="B">B<input type="radio" name="four3" value="C">C<input type="radio" name="four3" value="D">D<input type="radio" name="four3" value="E">E</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">4、我在正式运动会上取得的成绩常比体育课或平时练习的成绩好些。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="four4" value="A">A<input type="radio" name="four4" value="B">B<input type="radio" name="four4" value="C">C<input type="radio" name="four4" value="D">D<input type="radio" name="four4" value="E">E</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">5、我每次明明已把课文背得滚瓜烂熟了，可是在课堂上背的时候，却总要出点差错。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="four5" value="A">A<input type="radio" name="four5" value="B">B<input type="radio" name="four5" value="C">C<input type="radio" name="four5" value="D">D<input type="radio" name="four5" value="E">E</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">6、开会轮到我发言时，我似乎比别人更镇定，发言也显得很自然。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="four6" value="A">A<input type="radio" name="four6" value="B">B<input type="radio" name="four6" value="C">C<input type="radio" name="four6" value="D">D<input type="radio" name="four6" value="E">E</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">7、在冷天我比别人更怕冷，热天比别人更怕热。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="four7" value="A">A<input type="radio" name="four7" value="B">B<input type="radio" name="four7" value="C">C<input type="radio" name="four7" value="D">D<input type="radio" name="four7" value="E">E</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">8、在嘈杂、混乱的环境里，我仍能集中精力学习、工作，效率并不大幅降低。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="four8" value="A">A<input type="radio" name="four8" value="B">B<input type="radio" name="four8" value="C">C<input type="radio" name="four8" value="D">D<input type="radio" name="four8" value="E">E</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">9、每次检查身体,医生都说我“心跳过快”,其实平时脉搏很正常。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="four9" value="A">A<input type="radio" name="four9" value="B">B<input type="radio" name="four9" value="C">C<input type="radio" name="four9" value="D">D<input type="radio" name="four9" value="E">E</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">10、如果需要的话,我可以熬一个通宵,精力充沛地学习或工作。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="four10" value="A">A<input type="radio" name="four10" value="B">B<input type="radio" name="four10" value="C">C<input type="radio" name="four10" value="D">D<input type="radio" name="four10" value="E">E</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">11、当父母或兄弟姐妹的朋友来我家做客的时候,我尽量回避他们。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="four11" value="A">A<input type="radio" name="four11" value="B">B<input type="radio" name="four11" value="C">C<input type="radio" name="four11" value="D">D<input type="radio" name="four11" value="E">E</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">12、出门在外,虽然吃饭、睡觉、环境等变化很大,可是我很快就能习惯。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="four12" value="A">A<input type="radio" name="four12" value="B">B<input type="radio" name="four12" value="C">C<input type="radio" name="four12" value="D">D<input type="radio" name="four12" value="E">E</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">13、参加各种比赛时,赛场上越热烈,同学越加油,我的成绩反而越上不去。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="four13" value="A">A<input type="radio" name="four13" value="B">B<input type="radio" name="four13" value="C">C<input type="radio" name="four13" value="D">D<input type="radio" name="four13" value="E">E</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">14、上课回答问题或开会发言时,我能镇定自若地把事先想好的一切都完整地说出来。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="four14" value="A">A<input type="radio" name="four14" value="B">B<input type="radio" name="four14" value="C">C<input type="radio" name="four14" value="D">D<input type="radio" name="four14" value="E">E</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">15、我觉得一个人做事比大家一起干效率高些,所以我愿意一个人做事。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="four15" value="A">A<input type="radio" name="four15" value="B">B<input type="radio" name="four15" value="C">C<input type="radio" name="four15" value="D">D<input type="radio" name="four15" value="E">E</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">16、为求得和睦相处,我有时放弃自己的意见,附和大家。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="four16" value="A">A<input type="radio" name="four16" value="B">B<input type="radio" name="four16" value="C">C<input type="radio" name="four16" value="D">D<input type="radio" name="four16" value="E">E</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">17、当着众人和生人的面,我感到窘迫。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="four17" value="A">A<input type="radio" name="four17" value="B">B<input type="radio" name="four17" value="C">C<input type="radio" name="four17" value="D">D<input type="radio" name="four17" value="E">E</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">18、无论情况多么紧迫,我都能注意到该注意的细节,不爱丢三落四。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="four18" value="A">A<input type="radio" name="four18" value="B">B<input type="radio" name="four18" value="C">C<input type="radio" name="four18" value="D">D<input type="radio" name="four18" value="E">E</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">19、和别人争吵起来时,我常常哑口无言,事后才想起来该怎样反驳对方,可是已经晚了。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="four19" value="A">A<input type="radio" name="four19" value="B">B<input type="radio" name="four19" value="C">C<input type="radio" name="four19" value="D">D<input type="radio" name="four19" value="E">E</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">20、我每次参加正式考试或考核的成绩,常常比平时的成绩更好些。</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2"><input type="radio" name="four20" value="A">A<input type="radio" name="four20" value="B">B<input type="radio" name="four20" value="C">C<input type="radio" name="four20" value="D">D<input type="radio" name="four20" value="E">E</td>
+            </tr>
+            <tr>
+                <td style='text-align: right;' colspan='2'><input type='submit' value='保存'></td>
+            </tr>
+            <tr id="imgStartBefore">
+                <td style="text-align: left; color: red;" colspan="2">手术前后照片 改善度0~9评分</td>
+            </tr>
+            <tr>
+                <td style='text-align: right;' colspan='2'><input type='submit' value='保存'></td>
+            </tr>
+            <tr>
+                <td style="text-align: left;" colspan="2">
+                    <h4 style="color: red;">1.请点击“下一页”按钮，每次点击图形将发生变化。<br> 2.不断点击“下一页”按钮，对比左右图形，当右侧图形明显大于左侧时，点击“图形变大”按钮，点击一次即可。<br>3.继续点击“下一页”按钮，图形会继续增大，而后缩小，当右侧图形明显小于左侧时，点击“图形变小”按钮，点击一次即可。
+                    </h4>
+                </td>
+            </tr>
+            <!-- 横 -->
+            <tr style='border-top: 1px solid'>
+                <td>横.</td>
+                <td></td>
+            </tr>
+            <tr style="height: 400px;">
+                <td>
+                    <div id="hengDiv" style="width: 60px; height: 1px; background-color: black; overflow: hidden; margin: auto;">
+                        <input type="text" name="hengB" id="hengB" style="visibility: hidden;"> <input type="text" name="hengL" id="hengL" style="visibility: hidden;">
+                    </div>
+                </td>
+                <td>
+                    <div id="heng" style="width: 60px; height: 1px; background-color: black; overflow: hidden; margin: auto;"></div>
+                </td>
+            </tr>
 
-			<tr>
-				<td style="text-align: right;"><input
-					type="button"
-					value="上一页"
-					onclick="CalToggle(1)"
-				><input
-					type="button"
-					value="图形变大"
-					onclick="change2big(1)"
-				></td>
-				<td><input
-					type="button"
-					value="图形变小"
-					onclick="change2little(1)"
-					style="text-align: right;"
-				><input
-					type="button"
-					value="下一页"
-					onclick="Cal(1)"
-				></td>
-			</tr>
+            <tr>
+                <td style="text-align: right;"><input type="button" value="上一页" onclick="CalToggle(1)"><input type="button" value="图形变大" onclick="change2big(1)"></td>
+                <td><input type="button" value="图形变小" onclick="change2little(1)" style="text-align: right;"><input type="button" value="下一页" onclick="Cal(1)"></td>
+            </tr>
 
-			<!-- 竖 -->
-			<tr
-				id="22"
-				style='border-top: 1px solid'
-			>
-				<td>竖.</td>
-				<td></td>
-			</tr>
-			<tr
-				style="height: 400px;"
-				id="trshu"
-			>
-				<td>
-					<div
-						id="shuDiv"
-						style="width: 1px; height: 60px; border-right: 1px solid black; margin: auto;"
-					>
-						<input
-							type="text"
-							name="shuB"
-							id="shuB"
-							style="visibility: hidden;"
-						> <input
-							type="text"
-							name="shuL"
-							id="shuL"
-							style="visibility: hidden;"
-						>
-					</div>
-				</td>
-				<td>
-					<div
-						id="shu"
-						style="width: 1px; height: 60px; border-right: 1px solid black; margin: auto;"
-					></div>
-				</td>
-			</tr>
-			<tr id="trshuBtn">
-				<td style="text-align: right;"><input
-					type="button"
-					value="上一页"
-					onclick="CalToggle(2)"
-				><input
-					type="button"
-					value="图形变大"
-					onclick="change2big(2)"
-				></td>
-				<td><input
-					type="button"
-					value="图形变小"
-					style="text-align: right;"
-					onclick="change2little(2)"
-				><input
-					type="button"
-					value="下一页"
-					onclick="Cal(2)"
-				></td>
-			</tr>
-			<!-- 方 -->
-			<tr
-				id="23"
-				style='border-top: 1px solid'
-			>
-				<td>方.</td>
-				<td></td>
-			</tr>
-			<tr
-				style="height: 400px;"
-				id="trfang"
-			>
-				<td>
-					<div
-						id="fangDiv"
-						style="width: 60px; height: 60px; border: 1px solid black; margin: auto;"
-					>
-						<input
-							type="text"
-							name="fangB"
-							id="fangB"
-							style="visibility: hidden;"
-						> <input
-							type="text"
-							name="fangL"
-							id="fangL"
-							style="visibility: hidden;"
-						>
-					</div>
-				</td>
-				<td>
-					<div
-						id="fang"
-						style="width: 60px; height: 60px; border: 1px solid black; margin: auto;"
-					></div>
-				</td>
-			</tr>
-			<tr id="trfangBtn">
-				<td style="text-align: right;"><input
-					type="button"
-					value="上一页"
-					onclick="CalToggle(3)"
-				><input
-					type="button"
-					value="图形变大"
-					onclick="change2big(3)"
-				></td>
-				<td><input
-					type="button"
-					value="图形变小"
-					style="text-align: right;"
-					onclick="change2little(3)"
-				><input
-					type="button"
-					value="下一页"
-					onclick="Cal(3)"
-				></td>
-			</tr>
-			<!-- 圆 -->
-			<tr
-				id="24"
-				style='border-top: 1px solid'
-			>
-				<td>圆.</td>
-				<td></td>
-			</tr>
-			<tr
-				style="height: 400px;"
-				id="tryuan"
-			>
-				<td>
-					<div
-						id="yuanDiv"
-						style="border-radius: 50%; width: 60px; height: 60px; border: 1px solid black; margin: auto;"
-					>
-						<input
-							type="text"
-							name="yuanB"
-							id="yuanB"
-							style="visibility: hidden;"
-						> <input
-							type="text"
-							name="yuanL"
-							id="yuanL"
-							style="visibility: hidden;"
-						>
-					</div>
-				</td>
-				<td>
-					<div
-						id="yuan"
-						style="border-radius: 50%; width: 60px; height: 60px; border: 1px solid black; margin: auto;"
-					></div>
-				</td>
-			</tr>
-			<tr id="tryuanBtn">
-				<td style="text-align: right;"><input
-					type="button"
-					value="上一页"
-					onclick="CalToggle(4)"
-				><input
-					type="button"
-					value="图形变大"
-					onclick="change2big(4)"
-				></td>
-				<td><input
-					type="button"
-					value="图形变小"
-					style="text-align: right;"
-					onclick="change2little(4)"
-				><input
-					type="button"
-					value="下一页"
-					onclick="Cal(4)"
-				></td>
-			</tr>
-			<tr style="height: 10px;">
-				<td></td>
-				<td></td>
-			</tr>
-			<tr style='border-top: 1px solid'>
-				<td
-					style="text-align: right;"
-					colspan="2"
-				><input
-					type="submit"
-					value="保存"
-				></td>
-			</tr>
-			<tr>
-				<td
-					style="text-align: center;"
-					colspan="2"
-				>非常感谢您的配合与帮助！！！</td>
-			</tr>
-		</table>
-	</form>
+            <!-- 竖 -->
+            <tr id="22" style='border-top: 1px solid'>
+                <td>竖.</td>
+                <td></td>
+            </tr>
+            <tr style="height: 400px;" id="trshu">
+                <td>
+                    <div id="shuDiv" style="width: 1px; height: 60px; border-right: 1px solid black; margin: auto;">
+                        <input type="text" name="shuB" id="shuB" style="visibility: hidden;"> <input type="text" name="shuL" id="shuL" style="visibility: hidden;">
+                    </div>
+                </td>
+                <td>
+                    <div id="shu" style="width: 1px; height: 60px; border-right: 1px solid black; margin: auto;"></div>
+                </td>
+            </tr>
+            <tr id="trshuBtn">
+                <td style="text-align: right;"><input type="button" value="上一页" onclick="CalToggle(2)"><input type="button" value="图形变大" onclick="change2big(2)"></td>
+                <td><input type="button" value="图形变小" style="text-align: right;" onclick="change2little(2)"><input type="button" value="下一页" onclick="Cal(2)"></td>
+            </tr>
+            <!-- 方 -->
+            <tr id="23" style='border-top: 1px solid'>
+                <td>方.</td>
+                <td></td>
+            </tr>
+            <tr style="height: 400px;" id="trfang">
+                <td>
+                    <div id="fangDiv" style="width: 60px; height: 60px; border: 1px solid black; margin: auto;">
+                        <input type="text" name="fangB" id="fangB" style="visibility: hidden;"> <input type="text" name="fangL" id="fangL" style="visibility: hidden;">
+                    </div>
+                </td>
+                <td>
+                    <div id="fang" style="width: 60px; height: 60px; border: 1px solid black; margin: auto;"></div>
+                </td>
+            </tr>
+            <tr id="trfangBtn">
+                <td style="text-align: right;"><input type="button" value="上一页" onclick="CalToggle(3)"><input type="button" value="图形变大" onclick="change2big(3)"></td>
+                <td><input type="button" value="图形变小" style="text-align: right;" onclick="change2little(3)"><input type="button" value="下一页" onclick="Cal(3)"></td>
+            </tr>
+            <!-- 圆 -->
+            <tr id="24" style='border-top: 1px solid'>
+                <td>圆.</td>
+                <td></td>
+            </tr>
+            <tr style="height: 400px;" id="tryuan">
+                <td>
+                    <div id="yuanDiv" style="border-radius: 50%; width: 60px; height: 60px; border: 1px solid black; margin: auto;">
+                        <input type="text" name="yuanB" id="yuanB" style="visibility: hidden;"> <input type="text" name="yuanL" id="yuanL" style="visibility: hidden;">
+                    </div>
+                </td>
+                <td>
+                    <div id="yuan" style="border-radius: 50%; width: 60px; height: 60px; border: 1px solid black; margin: auto;"></div>
+                </td>
+            </tr>
+            <tr id="tryuanBtn">
+                <td style="text-align: right;"><input type="button" value="上一页" onclick="CalToggle(4)"><input type="button" value="图形变大" onclick="change2big(4)"></td>
+                <td><input type="button" value="图形变小" style="text-align: right;" onclick="change2little(4)"><input type="button" value="下一页" onclick="Cal(4)"></td>
+            </tr>
+            <tr style="height: 10px;">
+                <td></td>
+                <td></td>
+            </tr>
+            <tr style='border-top: 1px solid'>
+                <td style="text-align: right;" colspan="2"><input type="submit" value="保存"></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;" colspan="2">非常感谢您的配合与帮助！！！</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;" colspan="2">
+                    <a href="http://beian.miit.gov.cn">辽ICP备20009076号-1 </a>
+                </td>
+            </tr>
+        </table>
+    </form>
 </body>
 
 </html>
