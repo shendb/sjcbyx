@@ -1,6 +1,6 @@
 <?php
 header("Content-type: text/html;charset=utf-8");
-require ("db.php");
+require("db.php");
 error_reporting(E_ALL ^ E_NOTICE);
 try {
     $name = $_POST["name"];
@@ -220,7 +220,7 @@ try {
     $imgMonth = "imgMonth_1";
     $table4 = $_POST[$imgWeek];
     $table5 = $_POST[$imgMonth];
-    for ($i = 2; $i <= 41; $i ++) {
+    for ($i = 2; $i <= 41; $i++) {
         $imgWeek = "imgWeek_" . $i;
         $imgMonth = "imgMonth_" . $i;
         $table4 .= "|" . $_POST[$imgWeek];
@@ -242,7 +242,8 @@ try {
     } else {
         insertUserInfo($name, $baseInfo, $table1, $table2, $table3, $table4, $table5, $hengB, $hengL, $shuB, $shuL, $fangB, $fangL, $yuanB, $yuanL);
     }
-    echo ("提交成功！");
+    echo ("保存成功！");
+    echo "<script>alert('保存成功！');history.go(-1);</script>";
 } catch (Exception $e) {
     echo ($e->getMessage());
 }
