@@ -3,7 +3,7 @@ var Width = 0;
 var toggleFlg = false;
 
 window.onload = function() {
-	imgList();
+	// imgList();
 	sessionStorage.clear();
 }
 
@@ -258,63 +258,63 @@ function nameChang() {
 				if(isNotEmpty($baseInfo[1]) ){
 					$("input[name='sex'][value="+$baseInfo[1]+"]").attr("checked",true); 
 				}
-				if(isNotEmpty($baseInfo[2]) ){
-					$("[name='career']").val($baseInfo[2]);
-				}
-				if(isNotEmpty($baseInfo[3]) ){
-					$("[name='zhengrongNum']").val($baseInfo[3]);
-				}
-				if(isNotEmpty($baseInfo[4]) ){
-					$("[name='edu']").val($baseInfo[4]);
-				}
-				if(isNotEmpty($baseInfo[5]) ){
-					$("[name='income']").val($baseInfo[5]);
-				}
-				if(isNotEmpty($baseInfo[6]) ){
-					$("input[name='support'][value="+$baseInfo[6]+"]").attr("checked",true); 
-				}
-				if(isNotEmpty($baseInfo[7]) ){
-					$("input[name='beautyInfo'][value="+$baseInfo[7]+"]").attr("checked",true); 
-				}
-				if(isNotEmpty($baseInfo[8]) ){
-					$("input[name='expect'][value="+$baseInfo[8]+"]").attr("checked",true); 
-				}
-				if(isNotEmpty($baseInfo[9]) ){
-					$("input[name='zhengrongReason'][value="+$baseInfo[9]+"]").attr("checked",true); 
-				}
+				// if(isNotEmpty($baseInfo[2]) ){
+				// 	$("[name='career']").val($baseInfo[2]);
+				// }
+				// if(isNotEmpty($baseInfo[3]) ){
+				// 	$("[name='zhengrongNum']").val($baseInfo[3]);
+				// }
+				// if(isNotEmpty($baseInfo[4]) ){
+				// 	$("[name='edu']").val($baseInfo[4]);
+				// }
+				// if(isNotEmpty($baseInfo[5]) ){
+				// 	$("[name='income']").val($baseInfo[5]);
+				// }
+				// if(isNotEmpty($baseInfo[6]) ){
+				// 	$("input[name='support'][value="+$baseInfo[6]+"]").attr("checked",true); 
+				// }
+				// if(isNotEmpty($baseInfo[7]) ){
+				// 	$("input[name='beautyInfo'][value="+$baseInfo[7]+"]").attr("checked",true); 
+				// }
+				// if(isNotEmpty($baseInfo[8]) ){
+				// 	$("input[name='expect'][value="+$baseInfo[8]+"]").attr("checked",true); 
+				// }
+				// if(isNotEmpty($baseInfo[9]) ){
+				// 	$("input[name='zhengrongReason'][value="+$baseInfo[9]+"]").attr("checked",true); 
+				// }
 				
-				$table1=res.table1.split("|");
-				for (var i=0;i<$table1.length;i++){
-					if(isNotEmpty($table1[i]) ){
-						$("input[name='two"+(i+1)+"'][value="+$table1[i]+"]").attr("checked",true); 
-					}
-				}
+				// $table1=res.table1.split("|");
+				// for (var i=0;i<$table1.length;i++){
+				// 	if(isNotEmpty($table1[i]) ){
+				// 		$("input[name='two"+(i+1)+"'][value="+$table1[i]+"]").attr("checked",true); 
+				// 	}
+				// }
 				
-				$table2=res.table2.split("|");
-				for (var i=0;i<$table2.length;i++){
-					if(isNotEmpty($table2[i]) ){
-						$("input[name='three"+(i+1)+"'][value="+$table2[i]+"]").attr("checked",true); 
-					}
-				}
+				// $table2=res.table2.split("|");
+				// for (var i=0;i<$table2.length;i++){
+				// 	if(isNotEmpty($table2[i]) ){
+				// 		$("input[name='three"+(i+1)+"'][value="+$table2[i]+"]").attr("checked",true); 
+				// 	}
+				// }
 				
-				$table3=res.table3.split("|");
-				for (var i=0;i<$table3.length;i++){
-					if(isNotEmpty($table3[i]) ){
-						$("input[name='four"+(i+1)+"'][value="+$table3[i]+"]").attr("checked",true); 
-					}
-				}
-				$table4=res.table4.split("|");
-				for (var i=0;i<$table4.length;i++){
-					if(isNotEmpty($table4[i]) ){
-						$("input[name='imgWeek_"+(i+1)+"'][value="+$table4[i]+"]").attr("checked",true); 
-					}
-				}
-				$table5=res.table5.split("|");
-				for (var i=0;i<$table5.length;i++){
-					if(isNotEmpty($table5[i]) ){
-						$("input[name='imgMonth_"+(i+1)+"'][value="+$table5[i]+"]").attr("checked",true); 
-					}
-				}
+				// $table3=res.table3.split("|");
+				// for (var i=0;i<$table3.length;i++){
+				// 	if(isNotEmpty($table3[i]) ){
+				// 		$("input[name='four"+(i+1)+"'][value="+$table3[i]+"]").attr("checked",true); 
+				// 	}
+				// }
+				// $table4=res.table4.split("|");
+				// for (var i=0;i<$table4.length;i++){
+				// 	if(isNotEmpty($table4[i]) ){
+				// 		$("input[name='imgWeek_"+(i+1)+"'][value="+$table4[i]+"]").attr("checked",true); 
+				// 	}
+				// }
+				// $table5=res.table5.split("|");
+				// for (var i=0;i<$table5.length;i++){
+				// 	if(isNotEmpty($table5[i]) ){
+				// 		$("input[name='imgMonth_"+(i+1)+"'][value="+$table5[i]+"]").attr("checked",true); 
+				// 	}
+				// }
 				
 				
 			}else {

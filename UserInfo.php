@@ -7,15 +7,15 @@ class UserInfo
 
     public $baseInfo = "";
 
-    public $table1 = "";
+    // public $table1 = "";
 
-    public $table2 = "";
+    // public $table2 = "";
 
-    public $table3 = "";
+    // public $table3 = "";
 
-    public $table4 = "";
+    // public $table4 = "";
 
-    public $table5 = "";
+    // public $table5 = "";
 
     public $hengB = "";
 
